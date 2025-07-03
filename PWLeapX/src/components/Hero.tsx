@@ -18,14 +18,15 @@ const Hero = () => {
                 <span className="block text-[#F4A460]">Business Growth</span>
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
-                Transform your business with our expert-driven platform. We connect you with industry professionals who deliver results that matter. From strategy to execution, we're your partners in success.
+                ❝LeapX is built on a simple belief that founders don't need more advice, they need partners who build with them. <br />
+                 That's the gap we're here to fill❞
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="group bg-white text-[#E68C32] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center space-x-2">
                 <Play className="h-6 w-6 group-hover:scale-110 transition-transform" />
-                <span>Gopal's Sir Video</span>
+                <span>Demo Video</span>
               </button>
             </div>
           </div>

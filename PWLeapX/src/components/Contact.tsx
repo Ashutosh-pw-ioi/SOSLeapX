@@ -11,7 +11,7 @@ const fadeIn = {
 
 const Contact: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-[#fefbf5] p-10 shadow-lg">
+    <div id="contact" className="flex flex-col md:flex-row items-center justify-between bg-[#fefbf5] p-20 shadow-lg">
       {/* Left Form */}
       <motion.div
         className="w-full md:w-1/2 space-y-6"

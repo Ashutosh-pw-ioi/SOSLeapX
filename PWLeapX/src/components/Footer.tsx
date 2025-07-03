@@ -10,14 +10,14 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
                 <img
                   src="https://images.seeklogo.com/logo-png/47/2/physics-wallah-logo-png_seeklogo-474856.png"
                   alt="PWLeapX Logo"
                 />
-              </div>
-              <div className="w-24 h-10 mb-1">
-                <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1750876605/leapX_logo_wqfdxq.svg" alt="Name" />
+              </div> */}
+              <div className="w-24 h-10 mb-1 bg-white rounded-lg flex items-center justify-center">
+                <img src="/public/logo.svg" alt="Name" />
               </div>
             </Link>
             </div>
