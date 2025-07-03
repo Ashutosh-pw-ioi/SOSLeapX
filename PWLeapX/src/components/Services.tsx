@@ -1,38 +1,6 @@
 
 const Services = () => {
-  // const services = [
-  //   {
-  //     icon: Lightbulb,
-  //     title: 'Strategic Planning',
-  //     description: 'Comprehensive business strategy development and implementation guidance.'
-  //   },
-  //   {
-  //     icon: TrendingUp,
-  //     title: 'Growth Optimization',
-  //     description: 'Data-driven approaches to accelerate your business growth and market expansion.'
-  //   },
-  //   {
-  //     icon: Cog,
-  //     title: 'Process Improvement',
-  //     description: 'Streamline operations and enhance efficiency through proven methodologies.'
-  //   },
-  //   {
-  //     icon: Megaphone,
-  //     title: 'Digital Marketing',
-  //     description: 'Modern marketing strategies that drive engagement and conversions.'
-  //   },
-  //   {
-  //     icon: Shield,
-  //     title: 'Risk Management',
-  //     description: 'Comprehensive risk assessment and mitigation strategies for your business.'
-  //   },
-  //   {
-  //     icon: Globe,
-  //     title: 'Global Expansion',
-  //     description: 'Expert guidance for international market entry and expansion strategies.'
-  //   }
-  // ];
-
+  
   return (
     <section className="bg-[#FFF5D8] py-[80px]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
