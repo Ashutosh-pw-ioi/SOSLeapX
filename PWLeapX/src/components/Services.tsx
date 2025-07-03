@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Lightbulb, TrendingUp, Cog, Megaphone, Shield, Globe } from 'lucide-react';
 
 const Services = () => {

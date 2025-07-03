@@ -1,5 +1,3 @@
-import React from 'react';
-import { Target, Eye, Users } from 'lucide-react';
 
 const AboutUs = () => {
   const cards = [
@@ -21,7 +19,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="about" className="bg-white py-20">
+    <section id="about" className="bg-[#FFF5D8] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
@@ -38,9 +36,6 @@ const AboutUs = () => {
                 key={index}
                 className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 hover:border-[#F4A460]"
               >
-                {/* <div className="bg-[#E68C32] p-4 rounded-2xl w-fit mb-6 group-hover:bg-[#F4A460] transition-colors duration-300">
-                  {/* <IconComponent className="h-8 w-8 text-white" /> */}
-                {/* </div> */} 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {card.title}
                 </h3>

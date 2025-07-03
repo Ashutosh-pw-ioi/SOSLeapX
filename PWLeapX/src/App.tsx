@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
@@ -11,13 +11,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#E68C32]">
+    <div className="min-h-screen bg-[#FFF5D8]">
       <Header />
       <Hero />
       <AboutUs />
+      <Clients />
       <Experts />
       <Services />
-      <Clients />
       <Achievements />
       <Contact />
       <Footer />
