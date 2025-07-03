@@ -1,5 +1,5 @@
-
-import { Zap, Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -9,10 +9,17 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="bg-[#E68C32] p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
+              <Link to="/" className="flex items-center space-x-2">
+              <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                <img
+                  src="https://images.seeklogo.com/logo-png/47/2/physics-wallah-logo-png_seeklogo-474856.png"
+                  alt="PWLeapX Logo"
+                />
               </div>
-              <span className="text-2xl font-bold">PWLeapX</span>
+              <div className="w-24 h-10 mb-1">
+                <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1750876605/leapX_logo_wqfdxq.svg" alt="Name" />
+              </div>
+            </Link>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Empowering businesses worldwide through expert-driven solutions and strategic guidance. Your success is our mission.
@@ -46,19 +53,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-400 hover:text-[#E68C32] transition-colors">About Us</a></li>
-              <li><a href="#experts" className="text-gray-400 hover:text-[#E68C32] transition-colors">Our Experts</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-[#E68C32] transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Careers</a></li>
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-6">Contact Info</h3>
@@ -86,11 +80,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-[#E68C32] mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-400">Address</p>
+                  {/* <p className="text-gray-400">Address</p> */}
                   <p className="text-white">
-                    123 Business Ave<br />
-                    Suite 100<br />
-                    New York, NY 10001
+                    12th Floor, Brigade Signature Tower, Old Madras Rd, Sannatammanahalli, Bengaluru, Karnataka 560049
                   </p>
                 </div>
               </div>

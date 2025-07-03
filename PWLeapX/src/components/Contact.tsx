@@ -1,124 +1,123 @@
-import { useEffect } from 'react';
-import { Calendar, Clock, CheckCircle } from 'lucide-react';
+import { motion } from "framer-motion";
 
-declare global {
-  interface Window {
-    Calendly: any;
-  }
-}
+const fadeIn = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2 },
+  }),
+};
 
-const Contact = () => {
-  useEffect(() => {
-    // Initialize Calendly widget when component mounts
-    if (window.Calendly) {
-      window.Calendly.initInlineWidget({
-        url: 'https://calendly.com/your-username/30min',
-        parentElement: document.getElementById('calendly-inline-widget'),
-        prefill: {},
-        utm: {}
-      });
-    }
-  }, []);
-
-  const benefits = [
-    {
-      icon: Calendar,
-      title: 'Easy Scheduling',
-      description: 'Pick a time that works best for you from our available slots'
-    },
-    {
-      icon: Clock,
-      title: '30-minute consultation',
-      description: 'Focused discussion about your business goals and challenges'
-    },
-    {
-      icon: CheckCircle,
-      title: 'Actionable Insights',
-      description: 'Walk away with concrete next steps and recommendations'
-    }
-  ];
-
+const Contact: React.FC = () => {
   return (
-    <section id="contact" className="bg-[#E68C32] py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Connect With Us</h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Ready to take your business to the next level? Schedule a consultation with our experts
-          </p>
-        </div>
+    <div className="flex flex-col md:flex-row items-center justify-between bg-[#fefbf5] p-10 shadow-lg">
+      {/* Left Form */}
+      <motion.div
+        className="w-full md:w-1/2 space-y-6"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.1 } },
+        }}
+      >
+        <motion.h2
+          className="text-3xl font-bold"
+          variants={fadeIn}
+          custom={0}
+        >
+          Get in <span className="text-yellow-500">Touch</span>
+        </motion.h2>
+        <motion.input
+          type="tel"
+          placeholder="Company *"
+          className="w-full p-3 rounded-md bg-gray-50 border"
+          variants={fadeIn}
+          custom={3}
+          required
+        />
+        <motion.input
+          type="text"
+          placeholder="Name *"
+          className="w-full p-3 rounded-md bg-gray-50 border"
+          variants={fadeIn}
+          custom={1}
+          required
+        />
+        <motion.input
+          type="email"
+          placeholder="Email"
+          className="w-full p-3 rounded-md bg-gray-50 border"
+          variants={fadeIn}
+          custom={2}
+          required
+        />
+        <motion.input
+          type="tel"
+          placeholder="Phone Number *"
+          className="w-full p-3 rounded-md bg-gray-50 border"
+          variants={fadeIn}
+          custom={3}
+          required
+        />
+        
+        <div className="relative flex items-center justify-between">
+          <motion.button
+          className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition"
+          variants={fadeIn}
+          custom={4}
+        >
+          Submit
+        </motion.button>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left Side - Benefits */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">What to Expect</h3>
-              <div className="space-y-6">
-                {benefits.map((benefit, index) => {
-                  const IconComponent = benefit.icon;
-                  return (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="bg-[#E68C32] p-3 rounded-lg flex-shrink-0">
-                        <IconComponent className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                          {benefit.title}
-                        </h4>
-                        <p className="text-gray-600">{benefit.description}</p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Get In Touch</h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-gray-600">Email us directly:</p>
-                  <a href="mailto:hello@pwleapx.com" className="text-[#E68C32] font-semibold hover:text-[#F4A460] transition-colors">
-                    hello@pwleapx.com
-                  </a>
-                </div>
-                <div>
-                  <p className="text-gray-600">Call us:</p>
-                  <a href="tel:+1-555-123-4567" className="text-[#E68C32] font-semibold hover:text-[#F4A460] transition-colors">
-                    +1 (555) 123-4567
-                  </a>
-                </div>
-              </div>
+        <motion.div
+          className="flex space-x-8 items-center pt-4"
+          variants={fadeIn}
+          custom={5}
+        >
+          <div className="flex items-center gap-2">
+            <span className="text-xl">📞</span>
+            <div>
+              <p className="text-sm font-medium text-gray-600">PHONE</p>
+              <a
+                href="tel:+917042333674"
+                className="text-yellow-500 hover:underline"
+              >
+                +91-9481912068
+              </a>
             </div>
           </div>
-
-          {/* Right Side - Calendly Widget */}
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="p-6 bg-gradient-to-r from-[#E68C32] to-[#F4A460]">
-              <h3 className="text-2xl font-bold text-white mb-2">Schedule Your Consultation</h3>
-              <p className="text-white/90">Choose a time that works for you</p>
-            </div>
-            
-            {/* Calendly Inline Widget Placeholder */}
-            <div 
-              id="calendly-inline-widget" 
-              className="min-h-[600px] p-8 flex items-center justify-center bg-gray-50"
-            >
-              <div className="text-center">
-                <Calendar className="h-16 w-16 text-[#E68C32] mx-auto mb-4" />
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">Calendar Integration</h4>
-                {/* <p className="text-gray-600 mb-4">
-                  To enable the calendar booking system, please configure your Calendly integration.
-                </p> */}
-                <button className="bg-[#E68C32] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#F4A460] transition-colors">
-                  Book a Meeting
-                </button>
-              </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xl">✉️</span>
+            <div>
+              <p className="text-sm font-medium text-gray-600">EMAIL</p>
+              <a
+                href="mailto:studentsuccess@pwioi.com"
+                className="text-yellow-500 hover:underline"
+              >
+                studentsuccess@pwioi.com
+              </a>
             </div>
           </div>
+        </motion.div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+
+      {/* Right Image */}
+      <motion.div
+        className="hidden md:block w-full md:w-1/2 mt-10 md:mt-0"
+        initial={{ opacity: 0, x: 80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <img
+          src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/a2360798-168e-4e05-a17e-f33988bfaa1e.png"
+          alt="Customer Support"
+          className="w-90% h-[400px] ml-auto mr-auto "
+        />
+      </motion.div>
+    </div>
   );
 };
 
