@@ -36,24 +36,26 @@ const Clients = () => {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
-              > 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {client.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {client.description}
-                </p>
+                className="group bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 transform border border-gray-100 hover:border-[#F4A460]"
+              >
+                <>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {client.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {client.description}
+                  </p>
 
-                <div className="space-y-2">
-                  {client.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-[#E68C32] rounded-full"></div>
-                      <span className="text-gray-700 font-medium">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+                  <div className="space-y-2">
+                    {client.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-[#E68C32] rounded-full"></div>
+                        <span className="text-gray-700 font-medium">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
               </div>
             );
           })}

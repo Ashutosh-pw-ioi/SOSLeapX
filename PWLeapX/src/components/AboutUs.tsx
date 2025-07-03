@@ -34,7 +34,7 @@ const AboutUs = () => {
             return (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 hover:border-[#F4A460]"
+                className="group bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 transform border border-gray-100 hover:border-[#F4A460]"
               >
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {card.title}
