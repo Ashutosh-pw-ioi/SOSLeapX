@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           <div className="space-y-6">
-            <div className="flex items-center space-x-4 text-white bg-white/10 text-500 w-fit px-4 py-2 rounded-full shadow-lg">
+            <div className="flex space-x-4 text-white bg-white/10 text-500 w-fit px-4 py-2 rounded-full shadow-lg mt-[-30px]">
               Powered by PW SOS
             </div>
             <div className="space-y-6">
@@ -32,9 +32,9 @@ const Hero = () => {
 
           
           <div className="relative">
-            <div className="mb-[-150px]">
+            <div className="mb-[-150px] w-full h-full">
                 <img
-                    src="https://pwskills.com/images/homePageRevamp/Founders.svg"
+                    src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/73eb7125-6504-4fdf-90ef-4601bf39b10e.png"
                     alt='Founders of Physics Wallah'
                 />  
             </div>
