@@ -1,105 +1,65 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
-          {/* Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
-                <img
-                  src="https://images.seeklogo.com/logo-png/47/2/physics-wallah-logo-png_seeklogo-474856.png"
-                  alt="PWLeapX Logo"
-                />
-              </div>
-              <div className="w-24 h-10 mb-1">
-                <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1750876605/leapX_logo_wqfdxq.svg" alt="Name" />
-              </div>
-            </Link>
+    <footer className="bg-gray-950 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between mr-8 ml-5 items-start gap-12">
+
+        {/* Left Section: Logos & Copyright */}
+        <div className="space-y-4 text max-w-sm">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
+              <img
+                src="https://images.seeklogo.com/logo-png/47/2/physics-wallah-logo-png_seeklogo-474856.png"
+                alt="PW Logo"
+                className="object-contain w-full h-full"
+              />
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              Empowering businesses worldwide through expert-driven solutions and strategic guidance. Your success is our mission.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-[#E68C32] transition-colors duration-300">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-[#E68C32] transition-colors duration-300">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-[#E68C32] transition-colors duration-300">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-3 rounded-lg hover:bg-[#E68C32] transition-colors duration-300">
-                <Instagram className="h-5 w-5" />
+            <img
+              src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1750876605/leapX_logo_wqfdxq.svg"
+              alt="LeapX"
+              className="h-10 object-contain"
+            />
+          </div>
+          <p className="text-gray-400">Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
+             All rights reserved.</p>
+        </div>
+
+        {/* Middle Section: Contact Info */}
+        <div className="space-y-4">
+          <h3 className="text-lg font-semibold text-[#E68C32]">Contact Us</h3>
+          <div className="flex items-start gap-3">
+            <Mail className="h-5 w-5 text-[#E68C32] mt-1" />
+            <div>
+              <a href="mailto:contact@pwleapx.com" className="text-white hover:text-[#E68C32] text transition">
+                contact@pwleapx.com
               </a>
             </div>
           </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Our Services</h3>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Strategic Planning</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Growth Optimization</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Process Improvement</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Risk Management</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-[#E68C32] transition-colors">Global Expansion</a></li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Contact Info</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-[#E68C32] mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">Email</p>
-                  <a href="mailto:hello@pwleapx.com" className="text-white hover:text-[#E68C32] transition-colors">
-                    hello@pwleapx.com
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-[#E68C32] mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">Phone</p>
-                  <a href="tel:+1-555-123-4567" className="text-white hover:text-[#E68C32] transition-colors">
-                    +1 (555) 123-4567
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-[#E68C32] mt-1 flex-shrink-0" />
-                <div>
-                  {/* <p className="text-gray-400">Address</p> */}
-                  <p className="text-white">
-                    12th Floor, Brigade Signature Tower, Old Madras Rd, Sannatammanahalli, Bengaluru, Karnataka 560049
-                  </p>
-                </div>
-              </div>
+          <div className="flex items-start gap-3">
+            <Phone className="h-5 w-5 text-[#E68C32] mt-1" />
+            <div >
+              <a href="tel:+919481912068" className="text-white hover:text-[#E68C32] text transition">
+                +91 9481912068
+              </a>
             </div>
+          </div>
+          <div className="flex space-x-4 mt-2">
+            <a href="#" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition">
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a href="#" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition">
+              <Linkedin className="h-5 w-5" />
+            </a>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2025 PWLeapX. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 text-sm hover:text-[#E68C32] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-[#E68C32] transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-[#E68C32] transition-colors">Cookie Policy</a>
-          </div>
+        {/* Right Section: Legal Links */}
+        <div className="space-y-3 text text-gray-400 flex flex-col">
+          <a href="#" className="hover:text-[#E68C32] transition">Privacy Policy</a>
+          <a href="#" className="hover:text-[#E68C32] transition">Terms of Service</a>
+          <a href="#" className="hover:text-[#E68C32] transition">Cookie Policy</a>
         </div>
       </div>
     </footer>
