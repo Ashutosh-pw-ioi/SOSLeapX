@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Lightbulb, TrendingUp, Cog, Megaphone, Shield, Globe } from 'lucide-react';
 
 const Services = () => {
@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#FFF5D8] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Where We Can Help You</h2>

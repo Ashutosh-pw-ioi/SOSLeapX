@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Calendar, Clock, CheckCircle } from 'lucide-react';
 
 declare global {
@@ -107,9 +107,9 @@ const Contact = () => {
               <div className="text-center">
                 <Calendar className="h-16 w-16 text-[#E68C32] mx-auto mb-4" />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Calendar Integration</h4>
-                <p className="text-gray-600 mb-4">
+                {/* <p className="text-gray-600 mb-4">
                   To enable the calendar booking system, please configure your Calendly integration.
-                </p>
+                </p> */}
                 <button className="bg-[#E68C32] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#F4A460] transition-colors">
                   Book a Meeting
                 </button>

@@ -1,24 +1,19 @@
-import React from 'react';
-import { Building2, Rocket, Users2 } from 'lucide-react';
 
 const Clients = () => {
   const clientTypes = [
     {
-      icon: Building2,
       title: 'Enterprise Corporations',
       description: 'Large-scale organizations seeking strategic transformation and operational excellence.',
       features: ['Fortune 500 Companies', 'Global Market Leaders', 'Industry Innovators'],
       color: 'from-blue-500 to-blue-600'
     },
     {
-      icon: Rocket,
       title: 'Growing Startups',
       description: 'Fast-growing startups ready to scale their operations and expand their market reach.',
       features: ['Tech Startups', 'Funded Companies', 'Scale-up Ventures'],
       color: 'from-purple-500 to-purple-600'
     },
     {
-      icon: Users2,
       title: 'Small & Medium Businesses',
       description: 'Established SMBs looking to optimize processes and drive sustainable growth.',
       features: ['Local Businesses', 'Regional Players', 'Family Enterprises'],
@@ -27,27 +22,22 @@ const Clients = () => {
   ];
 
   return (
-    <section className="bg-[#E68C32] py-20">
+    <section className="bg-[#FFF5D8] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Who We Work With</h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-black mb-4">Who We Work With</h2>
+          <p className="text-xl text-gray-900 max-w-3xl mx-auto">
             We partner with organizations of all sizes, from ambitious startups to established enterprises
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {clientTypes.map((client, index) => {
-            const IconComponent = client.icon;
             return (
               <div
                 key={index}
                 className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
-              >
-                <div className={`bg-gradient-to-r ${client.color} p-4 rounded-2xl w-fit mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <IconComponent className="h-8 w-8 text-white" />
-                </div>
-                
+              > 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {client.title}
                 </h3>
