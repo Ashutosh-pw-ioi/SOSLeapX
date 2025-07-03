@@ -42,7 +42,7 @@ const Clients = () => {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+                className="group bg-white rounded p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 border border-gray-200"
               >
                 <div className={`bg-gradient-to-r ${client.color} p-4 rounded-2xl w-fit mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <IconComponent className="h-8 w-8 text-white" />
