@@ -16,12 +16,12 @@ const Header = () => {
   return (
     <header className="relative z-50 bg-white border-b border-[#F4A460] sticky top-0 rounded-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-1">
+        <div className="flex justify-between items-center py-0">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link to="/" className="flex items-center space-x-2">
-            <div className="w-40 h-16 mb-2 mt-0">
-              <img src="/public/logo.svg" alt="Name" />
+            <div className="w-40 h-16 mb-4 mt-[-5px]">
+              <img src="/public/logo.svg" alt="Name" className="mt-0" />
             </div>
           </Link>
           </div>
