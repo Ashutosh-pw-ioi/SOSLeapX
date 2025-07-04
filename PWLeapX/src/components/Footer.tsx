@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <div className="w-36">
               <img
-                src="/logo.svg"
+                src="https://res.cloudinary.com/difegeqqp/image/upload/v1751656538/logo_snftu0.svg"
                 alt="PW Logo"
                 className="w-full h-auto rounded-lg bg-white block"
               />
