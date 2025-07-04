@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Mail, Phone, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -29,15 +30,15 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <Mail className="h-5 w-5 text-[#E68C32] mt-1" />
             <div>
-              <a href="mailto:contact@pwleapx.com" className="text-white hover:text-[#E68C32] text transition">
+              <a href="mailto:contact@pwleapx.com" className="text-white hover:text-[#E68C32] transition">
                 contact@pwleapx.com
               </a>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Phone className="h-5 w-5 text-[#E68C32] mt-1" />
-            <div >
-              <a href="tel:+919481912068" className="text-white hover:text-[#E68C32] text transition">
+            <div>
+              <a href="tel:+919481912068" className="text-white hover:text-[#E68C32] transition">
                 +91 9481912068
               </a>
             </div>
@@ -53,10 +54,10 @@ const Footer = () => {
         </div>
 
         {/* Right Section: Legal Links */}
-        <div className="space-y-3 text text-gray-400 flex flex-col">
-          <a href="#" className="hover:text-[#E68C32] transition">Privacy Policy</a>
-          <a href="#" className="hover:text-[#E68C32] transition">Terms of Service</a>
-          <a href="#" className="hover:text-[#E68C32] transition">Cookie Policy</a>
+        <div className="space-y-3 text-gray-400 flex flex-col">
+          <Link to="https://www.pw.live/privacy-policy" className="hover:text-[#E68C32] transition">Privacy Policy</Link>
+          <Link to="https://www.pw.live/terms-and-conditions" className="hover:text-[#E68C32] transition">Terms of Service</Link>
+          <Link to="/cookie-policy" className="hover:text-[#E68C32] transition">Cookie Policy</Link>
         </div>
       </div>
     </footer>
