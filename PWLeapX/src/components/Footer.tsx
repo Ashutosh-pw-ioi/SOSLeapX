@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Mail, Phone, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
   <div className="flex items-center gap-4">
     <div className="w-36">
       <img
-        src="/logo.svg"
+        src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1751659251/PW_Leap_X_fxqdkj.svg"
         alt="PW Logo"
         className="w-full h-auto rounded-lg bg-white block"
       />
