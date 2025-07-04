@@ -21,7 +21,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <Link to="/" className="flex items-center space-x-2">
             <div className="w-40 h-16 mb-4 mt-[-5px]">
-              <img src="/public/logo.svg" alt="Name" className="mt-0" />
+              <img src="https://res.cloudinary.com/difegeqqp/image/upload/v1751656538/logo_snftu0.svg" alt="Logo" className="mt-0" />
             </div>
           </Link>
           </div>

@@ -8,21 +8,20 @@ const Footer = () => {
 
         {/* Left Section: Logos & Copyright */}
         <div className="space-y-4 max-w-sm">
-  <div className="flex items-center gap-4">
-    <div className="w-36">
-      <img
-        src="/logo.svg"
-        alt="PW Logo"
-        className="w-full h-auto rounded-lg bg-white block"
-      />
-    </div>
-  </div>
-  <p className="text-gray-400 text-sm">
-    Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
-    All rights reserved.
-  </p>
-</div>
-
+          <div className="flex items-center gap-4">
+            <div className="w-36">
+              <img
+                src="https://res.cloudinary.com/difegeqqp/image/upload/v1751656538/logo_snftu0.svg"
+                alt="PW Logo"
+                className="w-full h-auto rounded-lg bg-white block"
+              />
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm">
+            Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
+            All rights reserved.
+          </p>
+        </div>
 
         {/* Middle Section: Contact Info */}
         <div className="space-y-4">
@@ -30,15 +29,15 @@ const Footer = () => {
           <div className="flex items-start gap-3">
             <Mail className="h-5 w-5 text-[#E68C32] mt-1" />
             <div>
-              <a href="mailto:contact@pwleapx.com" className="text-white hover:text-[#E68C32] text transition">
+              <a href="mailto:contact@pwleapx.com" className="text-white hover:text-[#E68C32] transition">
                 contact@pwleapx.com
               </a>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Phone className="h-5 w-5 text-[#E68C32] mt-1" />
-            <div >
-              <a href="tel:+919481912068" className="text-white hover:text-[#E68C32] text transition">
+            <div>
+              <a href="tel:+919481912068" className="text-white hover:text-[#E68C32] transition">
                 +91 9481912068
               </a>
             </div>
@@ -54,10 +53,10 @@ const Footer = () => {
         </div>
 
         {/* Right Section: Legal Links */}
-        <div className="space-y-3 text text-gray-400 flex flex-col">
-          <a href="#" className="hover:text-[#E68C32] transition">Privacy Policy</a>
-          <a href="#" className="hover:text-[#E68C32] transition">Terms of Service</a>
-          <a href="#" className="hover:text-[#E68C32] transition">Cookie Policy</a>
+        <div className="space-y-3 text-gray-400 flex flex-col">
+          <Link to="https://www.pw.live/privacy-policy" className="hover:text-[#E68C32] transition">Privacy Policy</Link>
+          <Link to="https://www.pw.live/terms-and-conditions" className="hover:text-[#E68C32] transition">Terms of Service</Link>
+          <Link to="/cookie-policy" className="hover:text-[#E68C32] transition">Cookie Policy</Link>
         </div>
       </div>
     </footer>
