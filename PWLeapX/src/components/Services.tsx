@@ -49,7 +49,7 @@ const Services = () => {
               <h1 className="text-4xl font-bold mb-4">Where We Can Help You</h1>
               <p className="text-gray-600 mb-8 text-lg">Gain real-world job ready skills for the future.</p>
               <button className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-lg transition-transform hover:scale-105 shadow-lg">
-                Get Started →
+                Known More →
               </button>
             </div>
           </div>

@@ -33,7 +33,7 @@ const Hero = () => {
 
           
           <div className="relative">
-            <div className="mb-[-150px] w-full h-full">
+            <div className="mb-[-80px] w-full h-full">
                 <img
                     src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/73eb7125-6504-4fdf-90ef-4601bf39b10e.png"
                     alt='Founders of Physics Wallah'
