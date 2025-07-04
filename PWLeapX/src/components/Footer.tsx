@@ -7,24 +7,22 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between mr-8 ml-5 items-start gap-12">
 
         {/* Left Section: Logos & Copyright */}
-        <div className="space-y-4 text max-w-sm">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
-              <img
-                src="https://images.seeklogo.com/logo-png/47/2/physics-wallah-logo-png_seeklogo-474856.png"
-                alt="PW Logo"
-                className="object-contain w-full h-full"
-              />
-            </div>
-            <img
-              src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1750876605/leapX_logo_wqfdxq.svg"
-              alt="LeapX"
-              className="h-10 object-contain"
-            />
-          </div>
-          <p className="text-gray-400">Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
-             All rights reserved.</p>
-        </div>
+        <div className="space-y-4 max-w-sm">
+  <div className="flex items-center gap-4">
+    <div className="w-36">
+      <img
+        src="/logo.svg"
+        alt="PW Logo"
+        className="w-full h-auto rounded-lg bg-white block"
+      />
+    </div>
+  </div>
+  <p className="text-gray-400 text-sm">
+    Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
+    All rights reserved.
+  </p>
+</div>
+
 
         {/* Middle Section: Contact Info */}
         <div className="space-y-4">
