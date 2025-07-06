@@ -1,58 +1,65 @@
-
 const Services = () => {
-  
   return (
-    <section className="bg-[#FFF5D8] py-[80px]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#FFF5D8] px-4 h-[500px] sm:h-[500px] md:h-[500px] lg:h-[500px] relative overflow-hidden mt-10">
+      <div className="max-w-6xl mx-auto relative  text-black">
 
-        <div className="relative py-[120px] px-4 text-black overflow-hidden">
-            {/* Left Floating Labels */}
-            <div className="absolute left-4 top-10 flex flex-col gap-4">
-              <span className="bg-white text-black px-4 py-2 rounded-md rotate-[-10deg] shadow-lg font-semibold w-max">
-                📊 Data Analytics
-              </span>
-              <span className="bg-white text-black px-4 py-2 rounded-md rotate-[-6deg] shadow-lg font-semibold w-max">
-                🤖 Data Science & AI
-              </span>
-              <span className="bg-white text-black px-4 py-2 rounded-md rotate-[-3deg] shadow-lg font-semibold w-max">
-                💻 Web Development 
-              </span>
-              <span className="bg-white text-black px-4 py-2 rounded-md rotate-[1deg] shadow-lg font-semibold w-max">
-                🧠 App Development
-              </span>
-              <span className="bg-white text-black px-4 py-2 rounded-md rotate-[1deg] shadow-lg font-semibold w-max">
-                🧠 Product Management
-              </span>
-            </div>
+        {/* Left Floating Labels (hidden on small screens) */}
+        <div className="hidden md:flex flex-col gap-4 absolute left-4 top-10 z-0">
+          <span className="bg-white px-4 py-2 rounded-md rotate-[-10deg] shadow-lg font-semibold w-max">
+            Web & App Development
+          </span>
+          <span className="bg-white px-4 py-2 rounded-md rotate-[-6deg] shadow-lg font-semibold w-max">
+            Data Analytics & Visualization
+          </span>
+          
+          <span className="bg-white px-4 py-2 rounded-md rotate-[1deg] shadow-lg font-semibold w-max">
+            Data Science & Applied AI
+          </span>
+          <span className="bg-white px-4 py-2 rounded-md rotate-[-3deg] shadow-lg font-semibold w-max">
+            Chatbot Integration & Workflow Automation
+          </span>
+          <span className="bg-white px-4 py-2 rounded-md rotate-[1deg] shadow-lg font-semibold w-max">
+            Backend Automation & System Integration
+          </span>
+          <span className="bg-white px-4 py-2 rounded-md rotate-[1deg] shadow-lg font-semibold w-max">
+            Tech Planning & Infrastructure Deployment
+          </span>
+        </div>
 
-            {/* Right Floating Labels */}
-            <div className="absolute right-4 top-10 flex flex-col gap-4 items-end">
-              <span className="bg-white text-black px-4 py-3 rounded-md rotate-[6deg] shadow-lg font-semibold w-max">
-                🏦 Strategy Development
-              </span>
-              <span className="bg-white text-black px-4 py-3 rounded-md rotate-[10deg] shadow-lg font-semibold w-max">
-                👨‍💻 Market Research
-              </span>
-              <span className="bg-white text-black px-4 py-3 rounded-md rotate-[3deg] shadow-lg font-semibold w-max">
-                🔐 Digital Marketing
-              </span>
-              <span className="bg-white text-black px-4 py-3 rounded-md rotate-[3deg] shadow-lg font-semibold w-max">
-                🔐 Business Analytics
-              </span>
-              <span className="bg-white text-black px-4 py-3 rounded-md rotate-[6deg] shadow-lg font-semibold w-max">
-                🏦 Product Development
-              </span>
-            </div>
+        {/* Right Floating Labels (hidden on small screens) */}
+        <div className="hidden md:flex flex-col gap-4 items-end absolute right-4 top-10 z-0">
+          <span className="bg-white px-4 py-3 rounded-md rotate-[6deg] shadow-lg font-semibold w-max">
+            Market Research & Customer Insight
+          </span>
+          <span className="bg-white px-4 py-3 rounded-md rotate-[10deg] shadow-lg font-semibold w-max">
+            Go-To-Market & Growth Strategy
+          </span>
+          <span className="bg-white px-4 py-3 rounded-md rotate-[3deg] shadow-lg font-semibold w-max">
+            Pricing & Monetization Strategy
+          </span>
+          <span className="bg-white px-4 py-3 rounded-md rotate-[3deg] shadow-lg font-semibold w-max">
+            Brand Messaging & Positioning
+          </span>
+          <span className="bg-white px-4 py-3 rounded-md rotate-[6deg] shadow-lg font-semibold w-max">
+            Digital Marketing Strategy & Execution
+          </span>
+          <span className="bg-white px-4 py-3 rounded-md rotate-[10deg] shadow-lg font-semibold w-max">
+            Content Creation & Distribution
+          </span>
+          
+        </div>
 
-            {/* Center Content */}
-            <div className="max-w-2xl mx-auto text-center relative z-10 ">
-              <h1 className="text-4xl font-bold mb-4">Where We Can Help You</h1>
-              <p className="text-gray-600 mb-8 text-lg">Gain real-world job ready skills for the future.</p>
-              <button className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-lg transition-transform hover:scale-105 shadow-lg">
-                Known More →
-              </button>
-            </div>
-          </div>
+        {/* Center Content */}
+        <div className="relative z-10 text-center max-w-2xl mx-auto py-24 px-2 sm:px-4">
+          <h1 className="text-5xl sm:text-5xl lg:text-5xl font-bold mb-4 leading-snug">
+            Where <br /> We Can  Help You
+          </h1>
+          
+          <button className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-full transition-transform hover:scale-105 shadow-lg">
+            Know More →
+          </button>
+        </div>
+
       </div>
     </section>
   );

@@ -1,18 +1,47 @@
+import { motion } from 'framer-motion';
 
 const Achievements = () => {
   return (
-    <section className="bg-[#FFF5D8] py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Leaps</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The numbers that showcase our commitment to excellence and the impact we've made
-          </p>
-        </div>
+    <section className="text-black py-16 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
 
-        <div className="grid grid-cols-1 border border-gray-200 rounded-lg p-8 shadow-lg h-48 flex items-center  text-center justify-center">
-          <h1 className="text-3xl text-gray-900">Here, We will highlight our achievements/projects</h1>
-        </div>
+        {/* Text Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="flex-1 order-1"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Our {' '}
+            <span className="relative inline-block">LeapX</span>
+          </h2>
+          <p className="text-lg text-gray-800 mb-8">
+            We work behind the scenes where execution matters most, building products, streamlining operations, and accelerating go-to-market efforts for emerging startups.
+          </p>
+          <button className=" bg-orange-500 group relative inline-flex text-lg items-center px-6 py-3 border-2 border-orange-400 text-black rounded-full hover:bg-orange-400 hover:text-black transition duration-300">
+           Explore Impact
+            <span className="ml-2 transform group-hover:translate-x-1 transition duration-300">↗</span>
+          </button>
+        </motion.div>
+
+        {/* Image Section */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="flex-1 order-2"
+        >
+          <div className="rounded-xl overflow-hidden border-2 border-orange-400 shadow-lg">
+            <img
+              src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1751659251/PW_Leap_X_fxqdkj.svg"
+              alt="Masters' Union Experience"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );

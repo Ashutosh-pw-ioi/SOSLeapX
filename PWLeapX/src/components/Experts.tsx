@@ -1,198 +1,350 @@
-import { useRef, useState } from 'react';
-import { ChevronLeft, ChevronRight, Linkedin } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
 
-const Experts = () => {
+const FoundersSection: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [activeFilter, setActiveFilter] = useState('tech');
+  const [category, setCategory] = useState<"tech" | "management">("tech");
 
-  const experts = [
+  const founders = [
     {
-      name: 'Gopal Sharma',
-      designation: 'COO at PW',
-      image: 'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/62baf27a-2f8f-4289-93a3-dc9a559d5eaf.png',
-      linkedin: '#',
-      category: 'management'
+      name: "Sumeet Hanagandi",
+      title: "CEO",
+      company: "Sample Set LLC",
+      image: "https://media.istockphoto.com/id/1309075603/photo/young-business-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=CBxjjyvD3TYGGoB8pWCVT5RocqxB1V6Iu4ZCY-eoIYc=",
+      backText: "Data-driven strategies transforming industries across continents.",
+      category: "tech",
     },
     {
-      name: 'Janishar Ali',
-      designation: 'Head of Program at PWIOI',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662',
-      linkedin: '#',
-      category: 'tech'
+      name: "PlaySuper",
+      title: "",
+      company: "",
+      image: "https://media.istockphoto.com/id/1276966601/photo/beautiful-business-woman-is-writing-something-down-while-sitting-in-the-office-desk.jpg?s=612x612&w=0&k=20&c=VIo1xEjt_X38oZRAZrdOfYQK7buXGZWAarjcN4HXMwY=",
+      backText: "India's first Gaming Commerce company turning in-game rewards into reality.",
+      category: "tech",
     },
     {
-      name: 'Prakash Nimbalkar',
-      designation: 'Head of Program at PWIOI',
-     image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481',
-      linkedin: '#',
-      category: 'management'
+      name: "Manan Sahai",
+      title: "CEO",
+      company: "Beyond Veda",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042",
+      backText: "Leading healthcare revolution with Ayurveda and AI.",
+      category: "tech",
+    },
+     {
+      name: "Sumeet Hanagandi",
+      title: "CEO",
+      company: "Sample Set LLC",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662",
+      backText: "Data-driven strategies transforming industries across continents.",
+      category: "tech",
     },
     {
-      name: 'Dr. Sapna Nisbaiya',
-      designation: 'Strategic Academic Head at PWIOI',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863',
-      linkedin: '#',
-      category: 'management'
+      name: "PlaySuper",
+      title: "",
+      company: "",
+      image: "https://media.istockphoto.com/id/1293906513/photo/business-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=QQ-CE-ayo31H52ic0S1O62m3F2__Y_B82-MKZCS2-RQ=",
+      backText: "India's first Gaming Commerce company turning in-game rewards into reality.",
+      category: "tech",
     },
     {
-      name: 'Raunaq Mustafa',
-      designation: 'GM, Program Head at PW SOS',
-      image:'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/d73443e5-a742-4290-b60c-d469ccc35ae2.png', 
-      linkedin: '#',
-      category: 'management'
+      name: "Sumeet Hanagandi",
+      title: "CEO",
+      company: "Sample Set LLC",
+      image: "https://images.unsplash.com/photo-1659100946849-9b8851df6965?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBlb3BsZSUyMGltYWdlJTIwcHJvZmVzc2lvbmFsJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D",
+      backText: "Data-driven strategies transforming industries across continents.",
+      category: "tech",
     },
     {
-      name: 'Soumen Banerjee',
-      designation: 'GM at PW SOS',
-      image: 'https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/dbd25a79-9044-40cb-ab9a-e0f513e43743.png',
-      linkedin: '#',
-      category: 'management'
+      name: "PlaySuper",
+      title: "",
+      company: "",
+      image: "https://media.istockphoto.com/id/1308542628/photo/young-business-woman-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=pGz9vgby9CStcjvSX1Oc9rj1XqXn2Yw_5sPS4w5Vy74=",
+      backText: "India's first Gaming Commerce company turning in-game rewards into reality.",
+      category: "tech",
     },
     {
-      name: 'Aditya Nema',
-      designation: 'Business Consultant',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=400',
-      linkedin: '#',
-      category: 'management'
+      name: "Manan Sahai",
+      title: "CEO",
+      company: "Beyond Veda",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042",
+      backText: "Leading healthcare revolution with Ayurveda and AI.",
+      category: "tech",
     },
     {
-      name: 'Anurag Tiwari',
-      designation: 'Product Manager at PWIOI',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQFLWlQYiT0C8A/profile-displayphoto-shrink_400_400/B56ZaHJhemGQAg-/0/1746024143286?e=1756339200&v=beta&t=KI6xR-BHC4w-3Dt8-IYWoERN5KFX4VEXplRzIvnn_30',
-      linkedin: '#',
-      category: 'tech'
+      name: "PlaySuper",
+      title: "",
+      company: "",
+      image: "https://media.istockphoto.com/id/1309075603/photo/young-business-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=CBxjjyvD3TYGGoB8pWCVT5RocqxB1V6Iu4ZCY-eoIYc=",
+      backText: "India's first Gaming Commerce company turning in-game rewards into reality.",
+      category: "tech",
     },
     {
-      name: 'Syed Zabi Ulla',
-      designation: 'Java Mentor at PWIOI',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/Syed%20Zabi%20-%20Syed%20Zabi%20Ulla%20(1)-min.JPG?updatedAt=1749837457137',
-      linkedin: '#',
-      category: 'tech'
+      name: "Sumeet Hanagandi",
+      title: "CEO",
+      company: "Sample Set LLC",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/ali-min.JPG?updatedAt=1749631912662",
+      backText: "Data-driven strategies transforming industries across continents.",
+      category: "tech",
     },
     {
-      name: 'Saurabh Moharikar',
-      designation: 'Data Scientist',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/saurabh-min.JPG?updatedAt=1749837457042',
-      linkedin: '#',
-      category: 'tech'
+      name: "Manan Sahai",
+      title: "CEO",
+      company: "Beyond Veda",
+      image: "https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/62baf27a-2f8f-4289-93a3-dc9a559d5eaf.png",
+      backText: "Leading healthcare revolution with Ayurveda and AI.",
+      category: "management",
     },
     {
-      name: 'Satya Sai Neerukonda',
-      designation: 'DSA Mentor at PWIOI',
-      image: 'https://ik.imagekit.io/s0kb1s3cx3/PWIOI/satyasai-min.JPG?updatedAt=1749836127534',
-      linkedin: '#',
-      category: 'tech'
-    }
+      name: "Kanav Rishi Kumar",
+      title: "Proprietor",
+      company: "Woody's Pizzeria",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/nimbalkar-min.JPG?updatedAt=1749631912481",
+      backText: "Built a thriving food business with unique customer experience.",
+      category: "management",
+    },
+    {
+      name: "Tanisha Goyal",
+      title: "Founder",
+      company: "HR Maven",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863",
+      backText: "Empowering organizations with modern HR tools.",
+      category: "management",
+    },
+    {
+      name: "Kanav Rishi Kumar",
+      title: "Proprietor",
+      company: "Woody's Pizzeria",
+      image: "https://media.istockphoto.com/id/1489669316/photo/attractive-young-businessman-using-a-digital-tablet-while-standing-in-front-of-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=zL4t0nVba1S7RKdXhcIMXh8ye8-U1DV_ChxbwEG8lG4=",
+      backText: "Built a thriving food business with unique customer experience.",
+      category: "management",
+    },
+    {
+      name: "Tanisha Goyal",
+      title: "Founder",
+      company: "HR Maven",
+      image: "https://media.istockphoto.com/id/2121827514/photo/portrait-of-young-businesswoman-with-curly-hairstyle-wear-trendy-smart-casual-outfit-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=R9TOnGlHwC2be_TtbV6WeVf_YPn5dZ24BDVVtRWUrvs=",
+      backText: "Empowering organizations with modern HR tools.",
+      category: "management",
+    },
+    {
+      name: "Manan Sahai",
+      title: "CEO",
+      company: "Beyond Veda",
+      image: "https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/62baf27a-2f8f-4289-93a3-dc9a559d5eaf.png",
+      backText: "Leading healthcare revolution with Ayurveda and AI.",
+      category: "management",
+    },
+    {
+      name: "Kanav Rishi Kumar",
+      title: "Proprietor",
+      company: "Woody's Pizzeria",
+      image: "https://media.istockphoto.com/id/1309075603/photo/young-business-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=CBxjjyvD3TYGGoB8pWCVT5RocqxB1V6Iu4ZCY-eoIYc=",
+      backText: "Built a thriving food business with unique customer experience.",
+      category: "management",
+    },  
+    {
+      name: "Tanisha Goyal",
+      title: "Founder",
+      company: "HR Maven",
+      image: "https://ik.imagekit.io/s0kb1s3cx3/PWIOI/sapna-min.JPG?updatedAt=1749837456863",
+      backText: "Empowering organizations with modern HR tools.",
+      category: "management",
+    },
+    {
+      name: "Kanav Rishi Kumar",
+      title: "Proprietor",
+      company: "Woody's Pizzeria",
+      image: "https://media.istockphoto.com/id/1293906513/photo/business-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=QQ-CE-ayo31H52ic0S1O62m3F2__Y_B82-MKZCS2-RQ=",
+      backText: "Built a thriving food business with unique customer experience.",
+      category: "management",
+    },
+    {
+      name: "Tanisha Goyal",
+      title: "Founder",
+      company: "HR Maven",
+      image: "https://media.istockphoto.com/id/1276966601/photo/beautiful-business-woman-is-writing-something-down-while-sitting-in-the-office-desk.jpg?s=612x612&w=0&k=20&c=VIo1xEjt_X38oZRAZrdOfYQK7buXGZWAarjcN4HXMwY=",
+      backText: "Empowering organizations with modern HR tools.",
+      category: "management",
+    },
   ];
 
-  const filteredExperts = experts.filter(expert => expert.category === activeFilter);
+  const filteredFounders = founders.filter((f) => f.category === category);
 
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollAmount = 300;
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  };
+  useEffect(() => {
+    const container = scrollRef.current;
+    const scrollAmount = 270;
 
-  const handleFilterChange = (filter: 'tech' | 'management') => {
-    setActiveFilter(filter);
-    // Reset scroll position when filter changes
-    if (scrollRef.current) {
-      scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
-    }
-  };
+    const scrollInterval = setInterval(() => {
+      if (container) {
+        const maxScrollLeft = container.scrollWidth - container.clientWidth;
+        if (container.scrollLeft + scrollAmount >= maxScrollLeft) {
+          container.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          container.scrollTo({
+            left: container.scrollLeft + scrollAmount,
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 3000);
+
+    return () => clearInterval(scrollInterval);
+  }, [category]);
 
   return (
-    <section id="experts" className="bg-[#E68C32] py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Our Execution Experts</h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Meet our talented team of professionals who bring expertise and innovation to every project
-          </p>
-          
-          {/* Filter Buttons */}
-          <div className="flex justify-center space-x-4 mb-8">
-            <button
-              onClick={() => handleFilterChange('tech')}
-              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
-                activeFilter === 'tech'
-                  ? 'bg-white text-[#E68C32] shadow-lg'
-                  : 'bg-white/20 text-white hover:bg-white/30 border-2 border-white/50'
-              }`}
-            >
-              Tech Experts
-            </button>
-            <button
-              onClick={() => handleFilterChange('management')}
-              className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
-                activeFilter === 'management'
-                  ? 'bg-white text-[#E68C32] shadow-lg'
-                  : 'bg-white/20 text-white hover:bg-white/30 border-2 border-white/50'
-              }`}
-            >
-              Management Experts
-            </button>
-          </div>
-        </div>
+    <section className="bg-[#fefbf5] px-4 md:px-10 py-20" id="experts">
+      <h2 className="section-title">Our Execution Experts</h2>
+      <p className="section-subtitle">
+        Meet our talented team of professionals who bring expertise and innovation to every project
+      </p>
 
-        <div className="relative">
-          {/* Navigation Buttons */}
-          <button
-            onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow-lg hover:bg-[#F4A460] hover:text-white transition-all duration-300 transform hover:scale-110"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-          
-          <button
-            onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow-lg hover:bg-[#F4A460] hover:text-white transition-all duration-300 transform hover:scale-110"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </button>
+      <div className="button-group">
+        <button
+          className={category === "tech" ? "active" : ""}
+          onClick={() => setCategory("tech")}
+        >
+          Tech Expert
+        </button>
+        <button
+          className={category === "management" ? "active" : ""}
+          onClick={() => setCategory("management")}
+        >
+          Management Expert
+        </button>
+      </div>
 
-          {/* Scrollable Container */}
-          <div
-            ref={scrollRef}
-            className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4 px-12"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {filteredExperts.map((expert, index) => (
-              <div
-                key={`${expert.category}-${index}`}
-                className="group bg-white rounded-2xl p-3 shadow-lg hover:shadow-2xl transition-all duration-300 transform min-w-[280px] flex-shrink-0"
-              >
-                <div className="relative mb-4">
-                  <img
-                    src={expert.image}
-                    alt={expert.name}
-                    className="w-full h-48 object-cover rounded-xl"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
-                </div>
-                
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{expert.name}</h3>
-                  <p className="text-[#E68C32] font-semibold mb-2">{expert.designation}</p>
-                  
-                  <a
-                    href={expert.linkedin}
-                    className="inline-flex items-center justify-center bg-[#E68C32] p-3 rounded-full hover:bg-[#F4A460] transition-colors duration-300 transform"
-                  >
-                    <Linkedin className="h-5 w-5 text-white" />
-                  </a>
+      <div className="scroll-container" ref={scrollRef}>
+        {filteredFounders.map((founder, index) => (
+          <div className="flip-card" key={index}>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={founder.image} alt={founder.name} />
+                <div className="info">
+                  <h3 style={{ fontWeight: "bold", fontSize: "1.1rem" }}>{founder.name}</h3>
+                  <p>{founder.title}</p>
+                  <p style={{ color: "#555", fontSize: "0.9rem" }}>{founder.company}</p>
                 </div>
               </div>
-            ))}
+              <div className="flip-card-back">
+                <p style={{ fontSize: "0.95rem" }}>{founder.backText}</p>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
+
+      <style>{`
+        .flip-card {
+          background-color: transparent;
+          width: 250px;
+          height: 320px;
+          perspective: 1000px;
+          flex: 0 0 auto;
+          ;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-card-front {
+          background: #fef3c7;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .flip-card-front img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          padding:10px;
+          border-radius: 15px;  
+        }
+
+        .flip-card-front .info {
+          padding: 1rem;
+        }
+
+        .flip-card-back {
+          background-color: #fff;
+          color: black;
+          transform: rotateY(180deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+        }
+
+        .scroll-container {
+          display: flex;
+          gap: 1rem;
+          overflow-x: auto;
+          padding: 1rem;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+          display: none;
+        }
+
+        .section-title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+          text-align: center;
+          font-size: 1.125rem;
+          margin-bottom: 2rem;
+        }
+
+        .button-group {
+          text-align: center;
+          margin-bottom: 1.5rem;
+        }
+
+        .button-group button {
+          background: #fef3c7;
+          border: none;
+          padding: 0.6rem 1.2rem;
+          margin: 0 0.5rem;
+          border-radius: 40px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+       
+        .button-group .active {
+          background:rgb(238, 107, 25);
+          color: white;
+        }
+      `}</style>
     </section>
   );
 };
 
-export default Experts;
+export default FoundersSection;
