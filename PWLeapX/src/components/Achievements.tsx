@@ -18,11 +18,10 @@ const Achievements = () => {
             <span className="relative inline-block">LeapX</span>
           </h2>
           <p className="text-lg text-gray-800 mb-8">
-            Get into the shoes of a PGP student, join a roundtable with an alumni,
-            attend an admissions info session in your city, and get all your queries answered by our team.
+            We work behind the scenes where execution matters most, building products, streamlining operations, and accelerating go-to-market efforts for emerging startups.
           </p>
           <button className=" bg-orange-500 group relative inline-flex text-lg items-center px-6 py-3 border-2 border-orange-400 text-black rounded-full hover:bg-orange-400 hover:text-black transition duration-300">
-            Explore More
+           Explore Impact
             <span className="ml-2 transform group-hover:translate-x-1 transition duration-300">↗</span>
           </button>
         </motion.div>

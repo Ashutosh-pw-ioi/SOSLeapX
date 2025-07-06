@@ -4,17 +4,17 @@ const AboutUs = () => {
     {
       title: 'Who We Are',
     //   icon: Users,
-      description: 'We are a team of passionate professionals dedicated to helping businesses achieve their full potential through strategic guidance and expert execution.',
+      description: 'An execution-first initiative by PW School of Startups, built to empower early-stage and grassroots entrepreneurs across Bharat. From MVPs to operations to tech scaling, we don’t just advise, we execute with you. No equity. No filters. Just real support where it counts - If you are serious about building, we’re building with you.',
     },
     {
       title: 'Our Mission',
     //   icon: Target,
-      description: 'To empower businesses worldwide by connecting them with the right expertise at the right time, enabling sustainable growth and innovation.',
+      description: 'At LeapX, we empower startups and entrepreneurs with hands-on support for their most critical needs. We bridge ambition and action, cultivating practical skills, strategic mentorship, and working alongside founders to tackle real challenges and move ventures forward.',
     },
     {
       title: 'Our Vision',
     //   icon: Eye,
-      description: 'To become the global leader in professional services, creating a world where every business has access to expert knowledge and strategic support.',
+      description: 'At LeapX, our vision is to empower Bharat’s next generation of entrepreneurs as the go-to platform for on-ground startup support. We aim to build an ecosystem where innovation thrives through execution, giving every committed founder the mentorship and support to create something meaningful and sustainable.',
     },
   ];
 
@@ -23,9 +23,6 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover who we are, what drives us, and where we're heading together
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

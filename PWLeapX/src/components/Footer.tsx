@@ -52,11 +52,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+        
         {/* Right Section: Legal Links */}
         <div className="space-y-3 text-gray-400 flex flex-col">
-          <Link to="https://www.pw.live/privacy-policy" className="hover:text-[#E68C32] transition">Privacy Policy</Link>
-          <Link to="https://www.pw.live/terms-and-conditions" className="hover:text-[#E68C32] transition">Terms of Service</Link>
+          <Link to="https://www.pw.live/privacy-policy" target='_blank' className="hover:text-[#E68C32] transition">Privacy Policy</Link>
+          <Link to="https://www.pw.live/terms-and-conditions" target='_blank' className="hover:text-[#E68C32] transition">Terms of Service</Link>
           <Link to="/cookie-policy" className="hover:text-[#E68C32] transition">Cookie Policy</Link>
         </div>
       </div>

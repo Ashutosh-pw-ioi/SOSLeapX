@@ -13,9 +13,9 @@ const Hero = () => {
               Powered by PW SOS
             </div>
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Accelerate Your
-                <span className="block text-[#F4A460]">Business Growth</span>
+              <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+                Fueling Bharat’s Entrepreneurs with 
+                <span className=" text-black"> Execution, Not Just GYAN</span>
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
                 ❝LeapX is built on a simple belief that founders don't need more advice, they need partners who build with them. <br />
