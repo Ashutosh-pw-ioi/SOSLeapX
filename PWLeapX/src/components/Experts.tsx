@@ -286,13 +286,31 @@ const FoundersSection: React.FC = () => {
         }
 
         .flip-card-back {
-          background-color: #fff;
-          color: black;
+          background: linear-gradient(135deg,rgb(244, 167, 74),rgb(236, 158, 23));
+          color: white;
           transform: rotateY(180deg);
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 1rem;
+          padding: 1.5rem;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .flip-card-back::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+        }
+
+        .flip-card-back p {
+          position: relative;
+          z-index: 1;
+          line-height: 1.5;
         }
 
         .scroll-container {
@@ -339,7 +357,7 @@ const FoundersSection: React.FC = () => {
 
        
         .button-group .active {
-          background:rgb(238, 107, 25);
+          background: #E68C32;
           color: white;
         }
       `}</style>
