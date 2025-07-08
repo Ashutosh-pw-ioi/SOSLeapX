@@ -185,7 +185,7 @@ const FoundersSection: React.FC = () => {
           });
         }
       }
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(scrollInterval);
   }, [category]);
