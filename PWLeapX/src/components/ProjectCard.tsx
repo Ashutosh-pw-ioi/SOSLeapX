@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Github, Globe } from 'lucide-react';
+import { Github, Globe } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -29,11 +29,11 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   // const navigate = useNavigate();
 
-  const handleProfileClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // navigate(`/StudentsProfiles/${project.studentId}`);
-  };
+  // const handleProfileClick = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   // navigate(`/StudentsProfiles/${project.studentId}`);
+  // };
 
   const handleLiveLinkClick = (e: React.MouseEvent) => {
     e.preventDefault();
