@@ -412,6 +412,7 @@ const FoundersSection = () => {
           }
         }
       `}</style>
+
     </section>
   );
 };
