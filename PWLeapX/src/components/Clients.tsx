@@ -10,7 +10,7 @@ const Clients = () => {
     },
     {
       title: 'For Grassroots Innovators',
-      description: 'Empowering changemakers with hands-on execution support.  No matter your background, your innovation matters.',
+      description: 'Empowering changemakers with hands-on execution support. Doesn\'t matter what your background is, your innovation matters.',
       features: ['Get hands-on support', 'Bridge resource gaps', 'Scale your solutions'],
       color: 'from-green-500 to-green-600'
     }
