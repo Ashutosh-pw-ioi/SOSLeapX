@@ -8,20 +8,16 @@ const Footer = () => {
 
         {/* Left Section: Logos & Copyright */}
         <div className="space-y-4 max-w-sm">
-  <div className="flex items-center gap-4">
-    <div className="w-36">
-      <img
-        src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1751659251/PW_Leap_X_fxqdkj.svg"
-        alt="PW Logo"
-        className="w-full h-auto rounded-lg bg-white block"
-      />
-    </div>
-  </div>
-  <p className="text-gray-400 text-sm">
-    Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
-    All rights reserved.
-  </p>
-</div>
+          <div className="flex items-center space-x-2">
+                <div className="w-40 h-16 mb-4 mt-[-25px]">
+                  <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1752083292/PW_Leap_X_white_ijlnqu.svg" alt="logoName" className="mt-0" />
+                </div>
+          </div>
+          <p className="text-gray-400">
+            Copyright © 2025 Physics Wallah Pvt. Ltd. <br />
+            All rights reserved.
+          </p>
+        </div>
 
 
         {/* Middle Section: Contact Info */}

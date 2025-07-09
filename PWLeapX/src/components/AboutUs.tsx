@@ -11,7 +11,7 @@ const AboutUs = () => {
     },
     {
       title: 'Our Mission',
-      description: 'At LeapX, we empower startups and entrepreneurs with hands-on support for their most critical needs. We bridge ambition and action, cultivating practical skills, strategic mentorship, and working alongside founders to tackle real challenges and move ventures forward.',
+      description: 'At LeapX, we aim to help over 100 startups in the coming year bring their ideas to life with clarity, courage, and execution support.Our mission is rooted in impact, supporting founders who are building solutions, creating jobs, and shaping a better tomorrow.',
     },
     
   ];
