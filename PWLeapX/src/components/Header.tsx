@@ -1,14 +1,27 @@
 import { useState } from 'react';
 import {Menu, X} from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
     setIsMenuOpen(false);
   };
@@ -40,6 +53,14 @@ const Header = () => {
             >
               Our Experts
             </button>
+
+            <button
+              onClick={() => navigate('/projects')}
+              className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            >
+              Projects
+            </button>
+
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -77,6 +98,14 @@ const Header = () => {
               >
                 Our Experts
               </button>
+
+              <button
+                onClick={() => navigate('/projects')}
+                className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
+              >
+                Projects
+              </button>
+
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"

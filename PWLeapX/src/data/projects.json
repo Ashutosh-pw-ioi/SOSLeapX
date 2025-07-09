@@ -7,12 +7,12 @@
       "icon": "🤖",
       "studentId": 1,
       "technologies": ["React", "Python", "TensorFlow", "Node.js"],
-      "author": { "name": "Ananya Singh", "avatar": "A", "id": "ananya-singh" },
+      "author": { "name": "Ananya Singh", "avatar": "3", "id": "ananya-singh" },
       "gradient": "from-purple-600 to-blue-600",
       "liveLink": "https://ai-learning-platform-demo.vercel.app",
       "githubLink": "https://github.com/ananya-singh/ai-learning-platform",
       "profileLink": "/student-profile/ananya-singh",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTswv11ALM9VzTZaGdmN9o9kHeba9aZL4o1Nw&s"
     },
     {
       "id": 2,
@@ -21,41 +21,43 @@
       "icon": "⛓️",
       "studentId": 2,
       "technologies": ["Solidity", "Web3.js", "React", "Node.js"],
-      "author": { "name": "Rahul Kumar", "avatar": "R", "id": "rahul-kumar" },
+      "author": { "name": "Rahul Kumar", "avatar": "4", "id": "rahul-kumar" },
       "gradient": "from-green-600 to-teal-600",
       "liveLink": "https://blockchain-supply-chain.netlify.app",
       "githubLink": "https://github.com/rahul-kumar/blockchain-supply-chain",
       "profileLink": "/student-profile/rahul-kumar",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://vegavid.com/blog/wp-content/uploads/2023/07/Blockchain-in-Supply-Chain-Benefits-Top-Use-Cases.jpg"
     },
-    {
+
+     {
       "id": 3,
-      "title": "IoT Smart Campus",
-      "description": "Comprehensive IoT solution for smart campus management with real-time monitoring.",
-      "icon": "🏫",
-      "studentId": 3,
-      "technologies": ["Arduino", "Raspberry Pi", "React", "MongoDB"],
-      "author": { "name": "Priya Sharma", "avatar": "P", "id": "priya-sharma" },
-      "gradient": "from-orange-600 to-red-600",
-      "liveLink": "https://iot-smart-campus.herokuapp.com",
-      "githubLink": "https://github.com/priya-sharma/iot-smart-campus",
-      "profileLink": "/student-profile/priya-sharma",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
-    },
-    {
-      "id": 4,
       "title": "Quantum Computing Simulator",
       "description": "Web-based quantum computing simulator for educational and research purposes.",
       "icon": "⚛️",
-      "studentId": 4,
+      "studentId": 3,
       "technologies": ["Python", "Qiskit", "React", "WebAssembly"],
-      "author": { "name": "Suresh Patel", "avatar": "S", "id": "suresh-patel" },
+      "author": { "name": "Suresh Patel", "avatar": "5", "id": "suresh-patel" },
       "gradient": "from-pink-600 to-purple-600",
       "liveLink": "https://quantum-simulator-web.vercel.app",
       "githubLink": "https://github.com/suresh-patel/quantum-simulator",
       "profileLink": "/student-profile/suresh-patel",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMA_YKHul8deMVlsTGuv8lukegMekDzGIn7NKSPzl61VBjF9Xwj2XIFk-8Hy5d-EnFWs&usqp=CAU"
     },
+    {
+      "id": 4,
+      "title": "IoT Smart Campus",
+      "description": "Comprehensive IoT solution for smart campus management with real-time monitoring.",
+      "icon": "🏫",
+      "studentId": 4,
+      "technologies": ["Arduino", "Raspberry Pi", "React", "MongoDB"],
+      "author": { "name": "Priya Sharma", "avatar": "2", "id": "priya-sharma" },
+      "gradient": "from-orange-600 to-red-600",
+      "liveLink": "https://iot-smart-campus.herokuapp.com",
+      "githubLink": "https://github.com/priya-sharma/iot-smart-campus",
+      "profileLink": "/student-profile/priya-sharma",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKBnmyyY7TKfZlN5-uya1fs3uSEpeJHCPkvRpQlVeDG5LSFTmQ5EpHzj-It802CRWTK4&usqp=CAU"
+    },
+   
     {
       "id": 5,
       "title": "Cybersecurity Dashboard",
@@ -63,12 +65,12 @@
       "icon": "🛡️",
       "studentId": 5,
       "technologies": ["Python", "Django", "React", "TensorFlow"],
-      "author": { "name": "Neha Gupta", "avatar": "N", "id": "neha-gupta" },
+      "author": { "name": "Neha Gupta", "avatar": "4", "id": "neha-gupta" },
       "gradient": "from-cyan-600 to-blue-600",
       "liveLink": "https://cybersecurity-dashboard.netlify.app",
       "githubLink": "https://github.com/neha-gupta/cybersecurity-dashboard",
       "profileLink": "/student-profile/neha-gupta",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/4/d/4ddb1f328d60b0347d46646ee0151461078c6c98b94727c7aabfaa466b638bbd/cyber-security-dashboard-mc-slide.png"
     },
     {
       "id": 6,
@@ -77,12 +79,12 @@
       "icon": "🥽",
       "studentId": 6,
       "technologies": ["Unity", "C#", "WebXR", "Three.js"],
-      "author": { "name": "Vikash Yadav", "avatar": "V", "id": "vikash-yadav" },
+      "author": { "name": "Vikash Yadav", "avatar": "4", "id": "vikash-yadav" },
       "gradient": "from-indigo-600 to-purple-600",
       "liveLink": "https://vr-education-platform.vercel.app",
       "githubLink": "https://github.com/vikash-yadav/vr-education-platform",
       "profileLink": "/student-profile/vikash-yadav",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpsVslkPcPfYUNZUvATvMMNaT0-AzGF7V2A&s"
     },
     {
       "id": 7,
@@ -91,12 +93,12 @@
       "icon": "☁️",
       "studentId": 7,
       "technologies": ["Docker", "Kubernetes", "Go", "React"],
-      "author": { "name": "Arjun Mehta", "avatar": "A", "id": "arjun-mehta" },
+      "author": { "name": "Arjun Mehta", "avatar": "2", "id": "arjun-mehta" },
       "gradient": "from-teal-600 to-green-600",
       "liveLink": "https://cloud-microservices-demo.herokuapp.com",
       "githubLink": "https://github.com/arjun-mehta/cloud-microservices",
       "profileLink": "/student-profile/arjun-mehta",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUNdIyxDJrS8nOcU6aozHqdfQhB_1mEF2fEA&s"
     },
     {
       "id": 8,
@@ -105,12 +107,12 @@
       "icon": "📹",
       "studentId": 8,
       "technologies": ["Python", "OpenCV", "TensorFlow Lite", "React"],
-      "author": { "name": "Deepika Roy", "avatar": "D", "id": "deepika-roy" },
+      "author": { "name": "Deepika Roy", "avatar": "3", "id": "deepika-roy" },
       "gradient": "from-yellow-600 to-orange-600",
       "liveLink": "https://edge-ai-camera.netlify.app",
       "githubLink": "https://github.com/deepika-roy/edge-ai-camera",
       "profileLink": "/student-profile/deepika-roy",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalan-xaKXabMBtlfsojY9xa22W50MUnSaXw&s"
     },
     {
       "id": 9,
@@ -119,12 +121,12 @@
       "icon": "📡",
       "studentId": 9,
       "technologies": ["C++", "Python", "React", "Docker"],
-      "author": { "name": "Karthik Nair", "avatar": "K", "id": "karthik-nair" },
+      "author": { "name": "Karthik Nair", "avatar": "2", "id": "karthik-nair" },
       "gradient": "from-purple-600 to-pink-600",
       "liveLink": "https://5g-network-optimizer.vercel.app",
       "githubLink": "https://github.com/karthik-nair/5g-network-optimizer",
       "profileLink": "/student-profile/karthik-nair",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s"
+      "image": "https://leptonsoftware.com/wp-content/uploads/2019/04/5G-Network-Planning-and-Optimization-Challenges-Tools-Real-World-Use-Cases.jpg"
     }
   ],
   "managementProjects": [
@@ -135,7 +137,7 @@
       "icon": "🔄",
       "studentId": 10,
       "technologies": ["Strategic Planning", "Change Management", "Digital Analytics"],
-      "author": { "name": "Aisha Khan", "avatar": "A", "id": "aisha-khan" },
+      "author": { "name": "Aisha Khan", "avatar": "4", "id": "aisha-khan" },
       "gradient": "from-blue-600 to-indigo-600",
       "liveLink": "https://digital-transformation-strategy.netlify.app",
       "githubLink": "https://github.com/aisha-khan/digital-transformation",
@@ -149,7 +151,7 @@
       "icon": "📋",
       "studentId": 11,
       "technologies": ["Scrum", "Kanban", "Project Management", "Team Leadership"],
-      "author": { "name": "Rohan Sharma", "avatar": "R", "id": "rohan-sharma" },
+      "author": { "name": "Rohan Sharma", "avatar": "5", "id": "rohan-sharma" },
       "gradient": "from-green-600 to-emerald-600",
       "liveLink": "https://agile-project-mgmt.vercel.app",
       "githubLink": "https://github.com/rohan-sharma/agile-project-management",
@@ -163,7 +165,7 @@
       "icon": "🌱",
       "studentId": 12,
       "technologies": ["Business Strategy", "Sustainability", "Market Analysis"],
-      "author": { "name": "Kavya Patel", "avatar": "K", "id": "kavya-patel" },
+      "author": { "name": "Kavya Patel", "avatar": "4", "id": "kavya-patel" },
       "gradient": "from-emerald-600 to-teal-600",
       "liveLink": "https://sustainable-business-model.herokuapp.com",
       "githubLink": "https://github.com/kavya-patel/sustainable-business-model",
@@ -177,7 +179,7 @@
       "icon": "🌍",
       "studentId": 13,
       "technologies": ["Operations Research", "Supply Chain", "Data Analytics"],
-      "author": { "name": "Manish Gupta", "avatar": "M", "id": "manish-gupta" },
+      "author": { "name": "Manish Gupta", "avatar": "1", "id": "manish-gupta" },
       "gradient": "from-orange-600 to-red-600",
       "liveLink": "https://supply-chain-optimizer.netlify.app",
       "githubLink": "https://github.com/manish-gupta/supply-chain-optimizer",
@@ -191,7 +193,7 @@
       "icon": "💡",
       "studentId": 14,
       "technologies": ["Innovation Strategy", "R&D Management", "Portfolio Planning"],
-      "author": { "name": "Sneha Joshi", "avatar": "S", "id": "sneha-joshi" },
+      "author": { "name": "Sneha Joshi", "avatar": "2", "id": "sneha-joshi" },
       "gradient": "from-purple-600 to-pink-600",
       "liveLink": "https://innovation-management.vercel.app",
       "githubLink": "https://github.com/sneha-joshi/innovation-management",
@@ -205,7 +207,7 @@
       "icon": "👥",
       "studentId": 15,
       "technologies": ["Customer Journey Mapping", "UX Strategy", "Service Design"],
-      "author": { "name": "Amit Verma", "avatar": "A", "id": "amit-verma" },
+      "author": { "name": "Amit Verma", "avatar": "4", "id": "amit-verma" },
       "gradient": "from-cyan-600 to-blue-600",
       "liveLink": "https://cx-transformation.netlify.app",
       "githubLink": "https://github.com/amit-verma/cx-transformation",
@@ -219,7 +221,7 @@
       "icon": "📊",
       "studentId": 16,
       "technologies": ["HR Analytics", "People Analytics", "Talent Management"],
-      "author": { "name": "Pooja Singh", "avatar": "P", "id": "pooja-singh" },
+      "author": { "name": "Pooja Singh", "avatar": "3", "id": "pooja-singh" },
       "gradient": "from-indigo-600 to-purple-600",
       "liveLink": "https://hr-analytics-dashboard.vercel.app",
       "githubLink": "https://github.com/pooja-singh/hr-analytics",
@@ -233,7 +235,7 @@
       "icon": "🤝",
       "studentId": 17,
       "technologies": ["Partnership Strategy", "Business Development", "Negotiation"],
-      "author": { "name": "Rajesh Kumar", "avatar": "R", "id": "rajesh-kumar" },
+      "author": { "name": "Rajesh Kumar", "avatar": "5", "id": "rajesh-kumar" },
       "gradient": "from-teal-600 to-green-600",
       "liveLink": "https://strategic-partnerships.herokuapp.com",
       "githubLink": "https://github.com/rajesh-kumar/strategic-partnerships",
@@ -247,7 +249,7 @@
       "icon": "⚠️",
       "studentId": 18,
       "technologies": ["Risk Assessment", "Compliance", "Financial Modeling"],
-      "author": { "name": "Nisha Reddy", "avatar": "N", "id": "nisha-reddy" },
+      "author": { "name": "Nisha Reddy", "avatar": "5", "id": "nisha-reddy" },
       "gradient": "from-yellow-600 to-orange-600",
       "liveLink": "https://risk-management-system.netlify.app",
       "githubLink": "https://github.com/nisha-reddy/risk-management",
