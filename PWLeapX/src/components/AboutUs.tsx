@@ -31,10 +31,10 @@ const AboutUs = () => {
                 key={index}
                 className="group bg-white p-8 rounded-2xl shadow-lg transition-all duration-300 transform border border-gray-100 hover:border-[#F4A460]"
               >
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-left tracking-wide   ">
                   {card.description}
                 </p>
               </div>
