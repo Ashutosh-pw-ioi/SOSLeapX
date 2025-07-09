@@ -97,34 +97,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         {/* Student Name */}
         <div className="flex items-center space-x-2 mb-4">
           <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0">
-            {project.author.avatar.startsWith('http') ? (
-              <img
-                src={project.author.avatar}
-                alt={project.author.name}
-                className="w-full h-full object-cover"
-              />
-            ) : (
               <div className="w-full h-full bg-[#E68C32] flex items-center justify-center text-white font-semibold text-xs">
                 {project.author.avatar}
               </div>
-            )}
           </div>
           <span className="text-gray-700 text-sm font-medium">
-            {project.author.name}
+            Team Members
           </span>
         </div>
 
         {/* Action Buttons */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-          {/* Profile Button */}
-          <button
-            onClick={handleProfileClick}
-            className="flex items-center justify-center space-x-1.5 px-3 py-2 bg-[#E68C32] hover:bg-[#E68C32]/90 text-white rounded-lg border border-[#E68C32] hover:border-[#E68C32]/80 transition-all duration-200 cursor-pointer"
-          >
-            <User className="w-4 h-4 flex-shrink-0" />
-            <span className="text-xs font-medium">Profile</span>
-          </button>
-
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-2">
           {/* Live Demo Button */}
           <button
             onClick={handleLiveLinkClick}
