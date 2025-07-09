@@ -1,6 +1,5 @@
 import React from 'react';
 import { User, Github, Globe } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 interface Project {
   id: number;
@@ -28,7 +27,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleProfileClick = (e: React.MouseEvent) => {
     e.preventDefault();
