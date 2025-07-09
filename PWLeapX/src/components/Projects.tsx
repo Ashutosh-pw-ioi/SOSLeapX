@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Footer from './Footer';
+import { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import projectsData from '../data/projects.json';
 
