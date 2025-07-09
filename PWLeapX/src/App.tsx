@@ -8,7 +8,7 @@ import Clients from './components/Clients';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Projects from './components/Projects'; // Import your Projects component
+import Projects from './components/projects';
 
 // Home page component with all sections
 const HomePage = () => {

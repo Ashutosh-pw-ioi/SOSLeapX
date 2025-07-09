@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const FoundersSection: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [category, setCategory] = useState<"tech" | "management">("tech");
+const FoundersSection = () => {
+  const scrollRef = useRef(null);
+  const [category, setCategory] = useState("tech");
 
   const founders = [
     {
@@ -169,27 +170,25 @@ const FoundersSection: React.FC = () => {
 
   const filteredFounders = founders.filter((f) => f.category === category);
 
-  useEffect(() => {
-    const container = scrollRef.current;
-    const scrollAmount = 270;
-
-    const scrollInterval = setInterval(() => {
+  const scrollLeft = () => {
+      const container = scrollRef.current as HTMLDivElement | null;
       if (container) {
-        const maxScrollLeft = container.scrollWidth - container.clientWidth;
-        if (container.scrollLeft + scrollAmount >= maxScrollLeft) {
-          container.scrollTo({ left: 0, behavior: "smooth" });
-        } else {
-          container.scrollTo({
-            left: container.scrollLeft + scrollAmount,
-            behavior: "smooth",
-          });
-        }
+        container.scrollTo({
+          left: container.scrollLeft - 270,
+          behavior: "smooth",
+        });
       }
-    }, 5000);
+    };
 
-    return () => clearInterval(scrollInterval);
-  }, [category]);
-
+    const scrollRight = () => {
+      const container = scrollRef.current as HTMLDivElement | null;
+      if (container) {
+        container.scrollTo({
+          left: container.scrollLeft + 270,
+          behavior: "smooth",
+        });
+      }
+    };
   return (
     <section className="bg-[#fefbf5] px-4 md:px-10 py-20" id="experts">
       <h2 className="section-title">Our Execution Experts</h2>
@@ -212,24 +211,34 @@ const FoundersSection: React.FC = () => {
         </button>
       </div>
 
-      <div className="scroll-container" ref={scrollRef}>
-        {filteredFounders.map((founder, index) => (
-          <div className="flip-card" key={index}>
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={founder.image} alt={founder.name} />
-                <div className="info">
-                  <h3 style={{ fontWeight: "bold", fontSize: "1.1rem" }}>{founder.name}</h3>
-                  <p>{founder.title}</p>
-                  <p style={{ color: "#555", fontSize: "0.9rem" }}>{founder.company}</p>
+      <div className="scroll-wrapper">
+        <button className="scroll-btn scroll-btn-left" onClick={scrollLeft}>
+          <ChevronLeft size={24} />
+        </button>
+        
+        <div className="scroll-container" ref={scrollRef}>
+          {filteredFounders.map((founder, index) => (
+            <div className="flip-card" key={index}>
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img src={founder.image} alt={founder.name} />
+                  <div className="info">
+                    <h3 style={{ fontWeight: "bold", fontSize: "1.1rem" }}>{founder.name}</h3>
+                    <p>{founder.title}</p>
+                    <p style={{ color: "#555", fontSize: "0.9rem" }}>{founder.company}</p>
+                  </div>
+                </div>
+                <div className="flip-card-back">
+                  <p style={{ fontSize: "0.95rem" }}>{founder.backText}</p>
                 </div>
               </div>
-              <div className="flip-card-back">
-                <p style={{ fontSize: "0.95rem" }}>{founder.backText}</p>
-              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        
+        <button className="scroll-btn scroll-btn-right" onClick={scrollRight}>
+          <ChevronRight size={24} />
+        </button>
       </div>
 
       <style>{`
@@ -239,7 +248,6 @@ const FoundersSection: React.FC = () => {
           height: 320px;
           perspective: 1000px;
           flex: 0 0 auto;
-          ;
         }
 
         .flip-card-inner {
@@ -275,9 +283,9 @@ const FoundersSection: React.FC = () => {
 
         .flip-card-front img {
           width: 100%;
-          height: 180px;
+          height: 200px;
           object-fit: cover;
-          padding:10px;
+          padding: 10px;
           border-radius: 15px;  
         }
 
@@ -286,7 +294,7 @@ const FoundersSection: React.FC = () => {
         }
 
         .flip-card-back {
-          background: linear-gradient(135deg,rgb(244, 167, 74),rgb(236, 158, 23));
+          background: linear-gradient(135deg, rgb(244, 167, 74), rgb(236, 158, 23));
           color: white;
           transform: rotateY(180deg);
           display: flex;
@@ -313,6 +321,13 @@ const FoundersSection: React.FC = () => {
           line-height: 1.5;
         }
 
+        .scroll-wrapper {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
         .scroll-container {
           display: flex;
           gap: 1rem;
@@ -320,10 +335,36 @@ const FoundersSection: React.FC = () => {
           padding: 1rem;
           scrollbar-width: none;
           -ms-overflow-style: none;
+          flex: 1;
         }
 
         .scroll-container::-webkit-scrollbar {
           display: none;
+        }
+
+        .scroll-btn {
+          background: #E68C32;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          z-index: 10;
+        }
+
+        .scroll-btn:hover {
+          background: #d67a28;
+          transform: scale(1.1);
+        }
+
+        .scroll-btn:active {
+          transform: scale(0.95);
         }
 
         .section-title {
@@ -355,10 +396,20 @@ const FoundersSection: React.FC = () => {
           transition: background 0.3s;
         }
 
-       
         .button-group .active {
           background: #E68C32;
           color: white;
+        }
+
+        @media (max-width: 768px) {
+          .scroll-btn {
+            width: 40px;
+            height: 40px;
+          }
+          
+          .scroll-wrapper {
+            gap: 0.5rem;
+          }
         }
       `}</style>
     </section>

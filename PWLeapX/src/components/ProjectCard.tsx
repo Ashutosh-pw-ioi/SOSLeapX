@@ -1,26 +1,15 @@
 import React from 'react';
-import { User, Github, Globe } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Github, Globe } from 'lucide-react';
 
 interface Project {
   id: number;
   title: string;
   description: string;
-  icon?: string;
-  studentId: number;
   technologies: string[];
-  status: string;
-  date: string;
-  category: string;
   githubLink: string;
   liveLink: string;
-  author: {
-    name: string;
-    avatar: string;
-    id: number;
-  };
-  gradient?: string;
   image?: string;
+  teamSize: number;
 }
 
 interface ProjectCardProps {
@@ -28,13 +17,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const navigate = useNavigate();
-
-  const handleProfileClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    // navigate(`/StudentsProfiles/${project.studentId}`);
-  };
 
   const handleLiveLinkClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -56,21 +38,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <div className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#E68C32]/50 transition-all duration-300 hover:shadow-2xl hover:shadow-[#E68C32]/20">
       {/* Image Section */}
       <div className="relative h-44 overflow-hidden p-4">
-        {project.image ? (
           <img 
             src={project.image} 
             alt={project.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-md"
           />
-        ) : (
-          <div className="w-full h-full bg-gray-100 flex items-center justify-center relative rounded-md">
-            {project.icon && (
-              <span className="text-5xl opacity-80 text-gray-400">
-                {project.icon}
-              </span>
-            )}
-          </div>
-        )}
       </div>
 
       {/* Content Section */}
@@ -98,7 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex items-center space-x-2 mb-4">
           <div className="w-6 h-6 rounded-full overflow-hidden flex-shrink-0">
               <div className="w-full h-full bg-[#E68C32] flex items-center justify-center text-white font-semibold text-xs">
-                {project.author.avatar}
+                {project.teamSize}
               </div>
           </div>
           <span className="text-gray-700 text-sm font-medium">
@@ -114,7 +86,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             disabled={!project.liveLink}
             className={`flex items-center justify-center space-x-1.5 px-3 py-2 rounded-lg border transition-all duration-200 ${
               project.liveLink
-                ? 'bg-[#E68C32]/80 hover:bg-[#E68C32] text-white border-[#E68C32]/80 hover:border-[#E68C32] cursor-pointer'
+                ? 'bg-[#E68C32]/90 hover:bg-[#E68C32] text-white border-[#E68C32]/80 hover:border-[#E68C32] cursor-pointer'
                 : 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
             }`}
           >
@@ -128,7 +100,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             disabled={!project.githubLink}
             className={`flex items-center justify-center space-x-1.5 px-3 py-2 rounded-lg border transition-all duration-200 ${
               project.githubLink
-                ? 'bg-[#E68C32]/80 hover:bg-[#E68C32] text-white border-[#E68C32]/80 hover:border-[#E68C32] cursor-pointer'
+                ? 'bg-[#E68C32]/90 hover:bg-[#E68C32] text-white border-[#E68C32]/80 hover:border-[#E68C32] cursor-pointer'
                 : 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
             }`}
           >
