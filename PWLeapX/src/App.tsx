@@ -8,7 +8,8 @@ import Clients from './components/Clients';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Projects from './components/Projects'; // Import your Projects component
+import Projects from './components/Projects';
+import ServicesDetails from './components/SevicesDetails'
 
 // Home page component with all sections
 const HomePage = () => {
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/services-in-details" element={<ServicesDetails />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />

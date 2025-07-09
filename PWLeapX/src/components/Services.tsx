@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="bg-[#FFF5D8] px-4 h-[500px] relative overflow-hidden mt-10">
       <div className="max-w-6xl mx-auto relative text-black">
@@ -83,6 +86,7 @@ const Services = () => {
             Where <br /> We Can Help You
           </h1>
           <motion.button
+            onClick={() => navigate("/services-in-details")}
             className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-full transition-transform hover:scale-105 shadow-lg"
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
