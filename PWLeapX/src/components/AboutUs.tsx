@@ -34,7 +34,7 @@ const AboutUs = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-justify">
+                <p className="text-gray-600 leading-relaxed">
                   {card.description}
                 </p>
               </div>
