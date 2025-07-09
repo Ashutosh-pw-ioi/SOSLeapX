@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const FoundersSection = () => {
@@ -32,7 +32,7 @@ const FoundersSection = () => {
     },
      {
       name: "Himanshu Shekhar",
-      title: "Directer",
+      title: "Director",
       company: "Physics Wallah",
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916663/Himanshu_Shekhar_ufdqok.jpg",
       backText: "Business leader | 10+ yrs across ops, rev growth & talent | Builds at the crossroads of tech, product & people",
@@ -95,27 +95,11 @@ const FoundersSection = () => {
       category: "management",
     },
     {
-      name: "Prakash Nimbalkar",
-      title: "Head - (E- Cell)",
+      name: "Imran Rashid",
+      title: "Chief Business Officer @ PW",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/PRAKASH_NIMBALKAR_wduufa.jpg",
-      backText: "GTM & Startup Advisor | Mentor @ MeitY, Wadhwani, NASSCOM | Marketing Consultant",
-      category: "management",
-    },
-    {
-      name: "Anukul Nitin Narkhede",
-      title: "Sr. Manager",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882062/120A7614_feac7g.jpg",
-      backText: "Sr. Manager @ PW IOI | Founder @ Solvedout (50K+ downloads) | EdTech Ops & Strategy Expert | Ex-Startup Consultant",
-      category: "management",
-    },
-    {
-      name: "Dr. Sapna Nibsaiya",
-      title: "Phd, Brand Equity",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916662/Dr._Sapna_Nibsaiya_yv7fpt.jpg",
-      backText: "Program Leader | National Head | CA Trainer | Strategy & Economics Specialist | Consultant & SME Expert",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882059/1689530192943_ztw247.jpg",
+      backText: "Chief Business Officer @ PW | EdTech Growth Strategist | Founder @ Aptence | Product Leader with a decade of building impact-driven, data-backed solutions",
       category: "management",
     },
     {
@@ -127,29 +111,45 @@ const FoundersSection = () => {
       category: "management",
     },
     {
-      name: "Imran Rashid",
-      title: "Chief Business Officer @ PW",
+      name: "Prakash Nimbalkar",
+      title: "Head - (E- Cell)",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882059/1689530192943_ztw247.jpg",
-      backText: "Chief Business Officer @ PW | EdTech Growth Strategist | Founder @ Aptence | Product Leader with a decade of building impact-driven, data-backed solutions",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916664/PRAKASH_NIMBALKAR_wduufa.jpg",
+      backText: "GTM & Startup Advisor | Mentor @ MeitY, Wadhwani, NASSCOM | Marketing Consultant",
+      category: "management",
+    },
+    {
+      name: "Dr. Sapna Nibsaiya",
+      title: "Phd, Brand Equity",
+      company: "Physics Wallah",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916662/Dr._Sapna_Nibsaiya_yv7fpt.jpg",
+      backText: "Program Leader | National Head | CA Trainer | Strategy & Economics Specialist | Consultant & SME Expert",
+      category: "management",
+    },
+    {
+      name: "Pankaj Kumar Jha",
+      title: "Director - Ops",
+      company: "Physics Wallah",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751881472/120A7602_veqpyo.jpg",
+      backText: "Customer Experience & Ops Leader | Proven track record in Startups | Skilled in Ops Mgmt, Training, MIS & Risk Control",
       category: "management",
     },
     {
       name: "Aditya Nema",
       title: "Business Consultant",
-      company: "Physics Wallah",
+      company: " ",
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882060/1748720082720_yge5qd.jpg",
-      backText: "trategist | Ex-Shark Tank India (1500+ pitches, 100+ founders) | Built ventures in PropTech & Wellness | Growth, Fundraising & Ops Specialist",
+      backText: "Strategist | Ex-Shark Tank India (1500+ pitches, 100+ founders) | Built ventures in PropTech & Wellness | Growth, Fundraising & Ops Specialist",
+      category: "management",
+    }, 
+    {
+      name: "Anukul Nitin Narkhede",
+      title: "Sr. Manager",
+      company: "Physics Wallah",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882062/120A7614_feac7g.jpg",
+      backText: "Sr. Manager @ PW IOI | Founder @ Solvedout (50K+ downloads) | EdTech Ops & Strategy Expert | Ex-Startup Consultant",
       category: "management",
     },  
-    {
-      name: "Kaiful Wara",
-      title: "Banking & Finance",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1745844028998_f7i9ze.jpg",
-      backText: "ACAMS-Certified | AML/KYC & Compliance Pro | 7+ yrs across Banking Ops, Client Reviews & Regulatory Strategy",
-      category: "management",
-    },
     {
       name: "Vishal Hampiholi",
       title: "Q &  Amanager",
@@ -158,19 +158,54 @@ const FoundersSection = () => {
       backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
       category: "management",
     },
+    
+
     {
-      name: "Pankaj Kumar Jha",
-      title: "Directer - Ops",
+      name: "Vikas Bhansali",
+      title: "Head- Corporate Partnership & Career Excellence",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751881472/120A7602_veqpyo.jpg",
-      backText: "Customer Experience & Ops Leader | Proven track record in Startups | Skilled in Ops Mgmt, Training, MIS & Risk Control",
-      category: "management",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQFEVXRFd7Q1Xg/profile-displayphoto-shrink_400_400/B56ZbS2fJ.GoAo-/0/1747294222002?e=1757548800&v=beta&t=PZzOJdZ1_3HSqvW8jMSsWFTYGBk5PMsL8YCKtY5n6ss",
+      backText: "Strategist | Ex-Shark Tank India (1500+ pitches, 100+ founders) | Built ventures in PropTech & Wellness | Growth, Fundraising & Ops Specialist",
+      category: "poc",
+    }, 
+    {
+      name: "Kaiful Wara",
+      title: "Banking & Finance",
+      company: "Physics Wallah",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1745844028998_f7i9ze.jpg",
+      backText: "ACAMS-Certified | AML/KYC & Compliance Pro | 7+ yrs across Banking Ops, Client Reviews & Regulatory Strategy",
+      category: "poc",
     },
+    {
+      name: "Sourabh Prasad",
+      title: "Functional Lead - Career Services",
+      company: "Physics Wallah",
+      image: "https://media.licdn.com/dms/image/v2/C5603AQGGUj_P-5lHEA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657824161810?e=1757548800&v=beta&t=nU-cQmtYHTcpz3UyBC8lh4Z0zMJ_wZ4G1vPT5zBuHLI",
+      backText: "Sr. Manager @ PW IOI | Founder @ Solvedout (50K+ downloads) | EdTech Ops & Strategy Expert | Ex-Startup Consultant",
+      category: "poc",
+    },  
+    {
+      name: "Ashutosh Tiwari",
+      title: "Coporate Outreach Associate",
+      company: "Physics Wallah",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQHMtWGRApg0vw/profile-displayphoto-scale_400_400/B56ZfCGxHFGoAk-/0/1751308244593?e=1757548800&v=beta&t=gglaWaLgNIibX91TixOWzirz-kGEu-1nJfP7kcIQrS4",
+      backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
+      category: "poc",
+    },
+    {
+      name: "Rishabh Jain",
+      title: "Coporate Outreach Associate",
+      company: "Physics Wallah",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQHdGgVlFKdvZA/profile-displayphoto-shrink_400_400/B56ZdAdYjCH8Ag-/0/1749133134889?e=1757548800&v=beta&t=E5Dmgyrr1TfzFt8zVLxK-jGNxFOVssbJPLucXVtq2Gk",
+      backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
+      category: "poc",
+    },
+    
   ];
 
   const filteredFounders = founders.filter((f) => f.category === category);
 
-  const scrollLeft = () => {
+ const scrollLeft = () => {
       const container = scrollRef.current as HTMLDivElement | null;
       if (container) {
         container.scrollTo({
@@ -208,6 +243,12 @@ const FoundersSection = () => {
           onClick={() => setCategory("management")}
         >
           Management Expert
+        </button>
+        <button
+          className={category === "poc" ? "active" : ""}
+          onClick={() => setCategory("poc")}
+        >
+          Your POC
         </button>
       </div>
 

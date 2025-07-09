@@ -39,6 +39,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          <div className="flex items-start gap-3">
+            <Phone className="h-5 w-5 text-[#E68C32] mt-1" />
+            <div>
+              <a href="tel:+917240981514" className="text-white hover:text-[#E68C32] transition">
+                +91 7240981514
+              </a>
+            </div>
+          </div>
           <div className="flex space-x-4 mt-2">
             <a href="#" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition">
               <Instagram className="h-5 w-5" />
