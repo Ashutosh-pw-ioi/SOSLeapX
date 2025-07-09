@@ -51,7 +51,7 @@ const Projects = () => {
                     : 'bg-white text-[#E68C32] border-2 border-[#E68C32] hover:bg-[#E68C32] hover:text-white'
                 }`}
               >
-                 Tech Innovators
+                 Tech Projects
               </button>
 
               <button
@@ -62,7 +62,7 @@ const Projects = () => {
                     : 'bg-white text-[#E68C32] border-2 border-[#E68C32] hover:bg-[#E68C32] hover:text-white'
                 }`}
               >
-                 Management Leaders
+                 Management Projects
               </button>
             </div>
 
