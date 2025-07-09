@@ -3,19 +3,17 @@ const AboutUs = () => {
   const cards = [
     {
       title: 'Who We Are',
-    //   icon: Users,
       description: 'An execution-first initiative by PW School of Startups, built to empower early-stage and grassroots entrepreneurs across Bharat. From MVPs to operations to tech scaling, we don’t just advise, we execute with you. No equity. No filters. Just real support where it counts - If you are serious about building, we’re building with you.',
     },
     {
-      title: 'Our Mission',
-    //   icon: Target,
-      description: 'At LeapX, we empower startups and entrepreneurs with hands-on support for their most critical needs. We bridge ambition and action, cultivating practical skills, strategic mentorship, and working alongside founders to tackle real challenges and move ventures forward.',
-    },
-    {
       title: 'Our Vision',
-    //   icon: Eye,
       description: 'At LeapX, our vision is to empower Bharat’s next generation of entrepreneurs as the go-to platform for on-ground startup support. We aim to build an ecosystem where innovation thrives through execution, giving every committed founder the mentorship and support to create something meaningful and sustainable.',
     },
+    {
+      title: 'Our Mission',
+      description: 'At LeapX, we empower startups and entrepreneurs with hands-on support for their most critical needs. We bridge ambition and action, cultivating practical skills, strategic mentorship, and working alongside founders to tackle real challenges and move ventures forward.',
+    },
+    
   ];
 
   return (
@@ -36,7 +34,7 @@ const AboutUs = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-justify">
                   {card.description}
                 </p>
               </div>
