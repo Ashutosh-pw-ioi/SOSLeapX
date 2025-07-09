@@ -11,8 +11,8 @@ const fadeIn = {
 
 const Contact: React.FC = () => {
   return (
-    <div id="contact" className="w-full bg-[#fefbf5] px-4 md:px-10 py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div id="contact" className="w-full bg-[#fefbf5] px-4 md:px-10 py-20 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-[-50px]">
         {/* Left Form Section */}
         <motion.div
           className="space-y-6"
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
           </form>
 
           {/* Contact Info */}
-          <motion.div
+          {/* <motion.div
             className="flex flex-col sm:flex-row sm:justify-between gap-6 pt-4 px-4"
             variants={fadeIn}
             custom={6}
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Right Image Section */}
