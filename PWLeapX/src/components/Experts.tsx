@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ChevronLeft, ChevronRight,Linkedin,Mail } from "lucide-react";
+import { ChevronLeft, ChevronRight,Linkedin} from "lucide-react";
 
 const FoundersSection = () => {
   const scrollRef = useRef(null);
