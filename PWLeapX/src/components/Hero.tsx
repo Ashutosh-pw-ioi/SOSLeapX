@@ -23,8 +23,7 @@ const Hero = () => {
                   <span className=" text-black"> Execution, Not Just GYAN</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed">
-                  ❝LeapX is built on a simple belief that founders don't need more advice, they need partners who build with them. <br />
-                   That's the gap we're here to fill❞
+                  ❝LeapX is built on a simple belief, startups need real-time problem solving partners rather than just advisors. That's the gap we are aspiring to fill❞
                 </p>
               </div>
 
