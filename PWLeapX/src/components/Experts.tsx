@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight,Linkedin,Mail } from "lucide-react";
 
 const FoundersSection = () => {
   const scrollRef = useRef(null);
@@ -13,6 +13,7 @@ const FoundersSection = () => {
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751883327/1694026131307_tu3cnu.jpg",
       backText: "Tech leader with 8+ yrs experience | Now CTO @ Physics Wallah | Scaled 2+ startups",
       category: "tech",
+     
     },
     {
       name: "Vineet Govil",
@@ -154,7 +155,7 @@ const FoundersSection = () => {
       name: "Vishal Hampiholi",
       title: "Q &  Amanager",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1732429746537_plyno9.jpg",
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752173004/vishal_leapx_cum3ob.svg",
       backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
       category: "management",
     },
@@ -165,8 +166,10 @@ const FoundersSection = () => {
       title: "Head- Corporate Partnership & Career Excellence",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQFEVXRFd7Q1Xg/profile-displayphoto-shrink_400_400/B56ZbS2fJ.GoAo-/0/1747294222002?e=1757548800&v=beta&t=PZzOJdZ1_3HSqvW8jMSsWFTYGBk5PMsL8YCKtY5n6ss",
-      backText: "Strategist | Ex-Shark Tank India (1500+ pitches, 100+ founders) | Built ventures in PropTech & Wellness | Growth, Fundraising & Ops Specialist",
+      backText: "Ex- Great Learning and TalentSprint | Strategic Partnerships | Digital Transformation",
       category: "poc",
+      link: "https://www.linkedin.com/in/vikasbhansali/",
+      email: "vikash@pwioi.com"
     }, 
     {
       name: "Kaiful Wara",
@@ -175,30 +178,38 @@ const FoundersSection = () => {
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1745844028998_f7i9ze.jpg",
       backText: "ACAMS-Certified | AML/KYC & Compliance Pro | 7+ yrs across Banking Ops, Client Reviews & Regulatory Strategy",
       category: "poc",
+      link: "https://www.linkedin.com/in/kaifulwara/",
+      email: "kaifulwara@pwioi.com"
     },
     {
-      name: "Sourabh Prasad",
+      name: "Saurabh Prasad",
       title: "Functional Lead - Career Services",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/C5603AQGGUj_P-5lHEA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1657824161810?e=1757548800&v=beta&t=nU-cQmtYHTcpz3UyBC8lh4Z0zMJ_wZ4G1vPT5zBuHLI",
-      backText: "Sr. Manager @ PW IOI | Founder @ Solvedout (50K+ downloads) | EdTech Ops & Strategy Expert | Ex-Startup Consultant",
+      backText: "Career Strategist | Building Industry-Academia Partnerships for Future-Ready Workforce",
       category: "poc",
+      link: "https://www.linkedin.com/in/saurabh-prasad/",
+      email: "saurabhprasad@pwioi.com"
     },  
     {
       name: "Ashutosh Tiwari",
       title: "Coporate Outreach Associate",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQHMtWGRApg0vw/profile-displayphoto-scale_400_400/B56ZfCGxHFGoAk-/0/1751308244593?e=1757548800&v=beta&t=gglaWaLgNIibX91TixOWzirz-kGEu-1nJfP7kcIQrS4",
-      backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
+      backText: "Building Myself | Corporate Partnerships and Alliances | IIT Patna | AI Generalist",
       category: "poc",
+      link: "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/",
+      email: "saurabhprasad@pwioi.com"
     },
     {
       name: "Rishabh Jain",
       title: "Coporate Outreach Associate",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQHdGgVlFKdvZA/profile-displayphoto-shrink_400_400/B56ZdAdYjCH8Ag-/0/1749133134889?e=1757548800&v=beta&t=E5Dmgyrr1TfzFt8zVLxK-jGNxFOVssbJPLucXVtq2Gk",
-      backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
+      backText: "Building Myself | Corporate Partnerships and Alliances | IIT Patna | AI Generalist",
       category: "poc",
+      link: "https://www.linkedin.com/in/rishabh-jain-9a62052a1/",
+      email: "saurabhprasad@pwioi.com"
     },
     
   ];
@@ -271,6 +282,11 @@ const FoundersSection = () => {
                 </div>
                 <div className="flip-card-back">
                   <p style={{ fontSize: "0.95rem" }}>{founder.backText}</p>
+                  {founder.category === "poc" && founder.link && (
+                    <a href={founder.link} target="_blank" rel="noopener noreferrer">
+                      <Linkedin size={24} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -362,6 +378,21 @@ const FoundersSection = () => {
           line-height: 1.5;
         }
 
+        .flip-card-back a {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          color: white;
+          font-size: 1.5rem;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+          :hover {
+            color:rgb(7, 132, 148);
+          }
+        }
+
+        
+
         .scroll-wrapper {
           position: relative;
           display: flex;
@@ -450,6 +481,11 @@ const FoundersSection = () => {
           
           .scroll-wrapper {
             gap: 0.5rem;
+          }
+        }
+        @media (max-width: 480px) {
+          .button-group button {
+            margin-bottom: 1rem;
           }
         }
       `}</style>

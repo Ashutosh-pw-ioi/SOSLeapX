@@ -59,7 +59,7 @@ const servicesData = {
         title: "Tech Planning & Infrastructure Deployment",
         description: "Tech stack consultation based on product goals, scalability, and resource capacity. Hosting and deployment setup for Android, web apps, or internal systems. Get expert guidance on technology choices that align with your business objectives.",
         icon: <Cloud className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+        image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752173259/tech_edzxlq.svg",
         features: ["Tech Stack Planning", "Cloud Deployment", "Infrastructure Setup", "Scalability Planning"]
       }
     ]
@@ -72,7 +72,7 @@ const servicesData = {
         title: "Market Research & Customer Insight",
         description: "In-depth competitor benchmarking with feature, pricing, and positioning analysis. Industry trend reports and opportunity white-space identification. Understand your market landscape and discover untapped opportunities for growth.",
         icon: <Search className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752173255/MarketResearch_ech9nt.svg",
         features: ["Competitor Analysis", "Market Trends", "Customer Research", "Opportunity Mapping"]
       },
       {
