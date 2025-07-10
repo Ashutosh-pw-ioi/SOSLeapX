@@ -143,8 +143,8 @@ const servicesData = {
   }
 };
 
-const ServicesDetails = () => {
-  const [selectedService, setSelectedService] = useState(null);
+const ServicesDetails: React.FC = () => {
+  const [selectedService, setSelectedService] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('all'); // 'all', 'tech', 'management'
 
@@ -161,7 +161,22 @@ const ServicesDetails = () => {
     setIsLoading(false);
   }, []);
 
-  const ServiceCard = ({ service, index, isTarget }) => (
+
+  type ServiceType = {
+  id: string;
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+  image: string;
+  features: string[];
+};
+
+type ServiceCardProps = {
+  service: ServiceType;
+  index: number;
+};
+
+  const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => (
     <div
       id={service.id}
       className={`py-12 md:py-16 lg:py-16 transition-all duration-300`}
@@ -230,9 +245,9 @@ const ServicesDetails = () => {
     }
   }, [selectedService, isLoading]);
 
-  const handleFilterChange = (filter) => {
-    setActiveFilter(filter);
-  };
+  const handleFilterChange = (filter: 'all' | 'tech' | 'management') => {
+  setActiveFilter(filter);
+};
 
   const scrollToSection = (sectionId: string) => {
     if (location.pathname === '/') {
@@ -325,7 +340,6 @@ const ServicesDetails = () => {
                   key={service.id}
                   service={service}
                   index={index}
-                  isTarget={selectedService === service.id}
                 />
               ))}
             </div>
@@ -341,7 +355,6 @@ const ServicesDetails = () => {
                   key={service.id}
                   service={service}
                   index={index + (activeFilter === 'all' ? servicesData.tech.services.length : 0)}
-                  isTarget={selectedService === service.id}
                 />
               ))}
             </div>

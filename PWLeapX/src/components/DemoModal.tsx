@@ -1,12 +1,17 @@
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
-import { useEffect } from 'react';
 
-const DemoModal = ({ isOpen, onClose }) => {
-  const youtubeVideoId = "dQw4w9WgXcQ"; // Example ID - replace with your video ID
+interface DemoModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
 
-  // Handle escape key press
+const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
+  const youtubeVideoId = 'dQw4w9WgXcQ'; // Replace with your actual video ID
+
+  // Handle Escape key to close modal
   useEffect(() => {
-    const handleEscape = (event) => {
+    const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         onClose();
       }
@@ -14,28 +19,36 @@ const DemoModal = ({ isOpen, onClose }) => {
 
     if (isOpen) {
       document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
     }
 
     return () => {
       document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = 'unset'; // Re-enable scrolling
     };
   }, [isOpen, onClose]);
 
+  // Don't render the modal if it's not open
   if (!isOpen) return null;
 
   return (
     <>
       {/* Modal backdrop */}
-      <div 
+      <div
         className="fixed inset-0 z-40 bg-black bg-opacity-75 transition-opacity"
         onClick={onClose}
       />
-      
-      {/* Modal content */}
+
+      {/* Modal content wrapper */}
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div className="relative bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-300">
+        {/* Modal container */}
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+          className="relative z-50 bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden animate-in fade-in-0 zoom-in-95 duration-300"
+          onClick={(e) => e.stopPropagation()} // Prevent click bubbling to backdrop
+        >
           {/* Close button */}
           <button
             onClick={onClose}
@@ -45,13 +58,17 @@ const DemoModal = ({ isOpen, onClose }) => {
             <X className="h-6 w-6" />
           </button>
 
-          {/* Modal header */}
+          {/* Header */}
           <div className="bg-[#E68C32] text-white p-6 pb-4">
-            <h2 className="text-2xl font-bold">Explore LeapX Model</h2>
-            <p className="text-white/90 mt-2">Discover how LeapX transforms entrepreneurial dreams into reality</p>
+            <h2 id="modal-title" className="text-2xl font-bold">
+              Explore LeapX Model
+            </h2>
+            <p className="text-white/90 mt-2">
+              Discover how LeapX transforms entrepreneurial dreams into reality
+            </p>
           </div>
 
-          {/* Video container */}
+          {/* Embedded YouTube Video */}
           <div className="relative pb-[56.25%] h-0 overflow-hidden">
             <iframe
               src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0`}

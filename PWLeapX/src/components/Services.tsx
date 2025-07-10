@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 const Services = () => {
-  const handleServiceClick = (serviceId) => {
+  const handleServiceClick = (serviceId:string) => {
     // Navigate to services details with service ID
     window.location.href = `/services-details?service=${serviceId}`;
   };
