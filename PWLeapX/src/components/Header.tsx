@@ -93,10 +93,10 @@ const Header = () => {
                 About Us
               </button>
               <button
-                onClick={() => scrollToSection('experts')}
+                onClick={() => scrollToSection('services')}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
               >
-                Our Experts
+                Our Services
               </button>
 
               <button

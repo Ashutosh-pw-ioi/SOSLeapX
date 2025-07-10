@@ -13,7 +13,7 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-[#FFF5D8] px-4 h-[500px] relative overflow-hidden mt-10" id="services">
+    <section className="bg-[#FFF5D8] px-4 h-[400px] md:h-[500px] relative overflow-hidden mt-10" id="services">
       <div className="max-w-6xl mx-auto relative text-black">
 
         {/* Left Floating Labels - Tech Services */}
@@ -90,49 +90,39 @@ const Services = () => {
           ))}
         </motion.div>
 
-        {/* Mobile Service Cards */}
-        <div className="md:hidden flex flex-col gap-3 px-4 pt-16 pb-20">
-          <h2 className="text-2xl font-bold text-center mb-6">Our Services</h2>
-          <div className="grid grid-cols-1 gap-3">
-            {[
-              // Tech Services
-              { text: "Web & MVP Development", id: "web-mvp-development", category: "Tech" },
-              { text: "Data Analytics & Visualization", id: "data-analytics-visualization", category: "Tech" },
-              { text: "Data Science & Applied AI", id: "data-science-applied-ai", category: "Tech" },
-              { text: "Chatbot Integration & Workflow Automation", id: "chatbot-integration-workflow-automation", category: "Tech" },
-              { text: "Backend Automation & System Integration", id: "backend-automation-system-integration", category: "Tech" },
-              { text: "Tech Planning & Infrastructure Deployment", id: "tech-planning-infrastructure-deployment", category: "Tech" },
-              // Management Services
-              { text: "Market Research & Customer Insight", id: "market-research-customer-insight", category: "Management" },
-              { text: "Go-To-Market & Growth Strategy", id: "go-to-market-growth-strategy", category: "Management" },
-              { text: "Pricing & Monetization Strategy", id: "pricing-monetization-strategy", category: "Management" },
-              { text: "Brand Messaging & Positioning", id: "brand-messaging-positioning", category: "Management" },
-              { text: "Digital Marketing Strategy & Execution", id: "digital-marketing-strategy-execution", category: "Management" },
-              { text: "Content Creation & Distribution", id: "content-creation-distribution", category: "Management" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                className="bg-white px-4 py-3 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-all duration-200 group"
-                onClick={() => handleServiceClick(item.id)}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.05 }}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold text-sm">{item.text}</span>
-                    <ArrowRight className="w-4 h-4 text-[#E68C32] group-hover:translate-x-1 transition-transform duration-200" />
-                  </div>
-                  <span className="text-xs text-[#E68C32] font-medium">{item.category}</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        {/* Mobile Content - Simple heading and button */}
+        <div className="md:hidden flex flex-col items-center justify-center h-full text-center px-4">
+          <motion.h1
+            className="text-4xl font-bold mb-6 leading-snug"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Where <br /> We Can Help You
+          </motion.h1>
+          <motion.p
+            className="text-gray-700 text-lg mb-8 max-w-sm leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            From cutting-edge tech solutions to strategic business growth, we provide comprehensive services to transform your ideas into reality.
+          </motion.p>
+          <motion.button
+            onClick={handleKnowMoreClick}
+            className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-full transition-transform hover:scale-105 shadow-lg flex items-center gap-2"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Know More
+            <ArrowRight className="w-4 h-4" />
+          </motion.button>
         </div>
 
-        {/* Center Content */}
+        {/* Desktop Center Content */}
         <motion.div
           className="relative z-10 text-center max-w-2xl mx-auto py-24 px-2 sm:px-4 hidden md:block"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -153,19 +143,6 @@ const Services = () => {
             <ArrowRight className="w-4 h-4" />
           </motion.button>
         </motion.div>
-
-        {/* Mobile Know More Button */}
-        <div className="md:hidden text-center pb-8">
-          <motion.button
-            onClick={handleKnowMoreClick}
-            className="bg-[#E68C32] hover:bg-[#f68a6b] text-white font-semibold py-3 px-6 rounded-full transition-transform hover:scale-105 shadow-lg flex items-center gap-2 mx-auto"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View All Services
-            <ArrowRight className="w-4 h-4" />
-          </motion.button>
-        </div>
 
       </div>
     </section>
