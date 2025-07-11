@@ -11,7 +11,7 @@ const servicesData = {
         title: "Web & MVP Development",
         description: "End-to-end website development for landing pages, portfolios, or product showcases. Interactive web platforms with login systems, user dashboards, and workflows. We create responsive, modern websites that not only look great but also provide seamless user experiences across all devices.",
         icon: <Code className="w-8 h-8" />,
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
+        image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1752140613/project1_k6rdh8.svg",
         features: ["Responsive Design", "User Authentication", "Dashboard Development", "SEO Optimization"]
       },
       {

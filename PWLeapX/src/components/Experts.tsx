@@ -152,9 +152,9 @@ const FoundersSection = () => {
     },  
     {
       name: "Vishal Hampiholi",
-      title: "Q &  Amanager",
+      title: "Q & A manager",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1732429746537_plyno9.jpg",
+      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1752140613/Vishal_sir_image_ydqyoc.svg",
       backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
       category: "management",
     },
