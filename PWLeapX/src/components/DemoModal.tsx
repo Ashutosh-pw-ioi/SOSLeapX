@@ -7,7 +7,7 @@ interface DemoModalProps {
 }
 
 const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
-  const youtubeVideoId = '2iElM5Wt548?si=viaOT3XBRaouvY4m'; // Replace with your actual video ID
+  const youtubeVideoId = '2iElM5Wt548'; 
 
   // Handle Escape key to close modal
   useEffect(() => {
@@ -63,9 +63,6 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
             <h2 id="modal-title" className="text-2xl font-bold">
               Explore LeapX Model
             </h2>
-            <p className="text-white/90 mt-2">
-              Discover how LeapX transforms entrepreneurial dreams into reality
-            </p>
           </div>
 
           {/* Embedded YouTube Video */}

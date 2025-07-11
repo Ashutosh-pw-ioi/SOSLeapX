@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import {useState } from "react";
 import type { FormEvent } from "react";
 import { toast } from "react-hot-toast";
 
@@ -13,33 +12,38 @@ const fadeIn = {
 };
 
 const Contact: React.FC = () => {
-   const [formSubmitted, setFormSubmitted] = useState(false)
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const url =
+      "https://script.google.com/macros/s/AKfycbytCfFDB9NESpdDXu2olm26E8jGyuoSVdaB2-vkwgntYzsbUPYb41Z__gJvgOH69lga/exec";
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  const form = e.target as HTMLFormElement;
-  const url = "https://script.google.com/macros/s/AKfycbytCfFDB9NESpdDXu2olm26E8jGyuoSVdaB2-vkwgntYzsbUPYb41Z__gJvgOH69lga/exec";
+    const formData = new FormData(form);
+    const formBody = new URLSearchParams(formData as any).toString();
 
-  const formData = new FormData(form);
-  const formBody = new URLSearchParams(formData as any).toString();
+    const toastId = toast.loading("Submitting...");
 
-  fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: formBody
-  })
-  .then(res => res.text())
-  .then(data => {
-    toast(data);
-    setFormSubmitted(true);
-    form.reset();
-  })
-  .catch(err => console.error(err));
-};
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formBody,
+      });
+
+      await res.text();
+
+      toast.success("Thank you! We’ll reach out soon!", { id: toastId });
+      form.reset(); 
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to submit form. Please try again.", { id: toastId });
+    }
+  };
+
   return (
-    <div id="contact" className="w-full bg-[#fefbf5] px-4 md:px-10 py-20 ">
+    <div id="contact" className="w-full bg-[#fefbf5] px-4 md:px-10 py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-[-50px]">
         {/* Left Form Section */}
         <motion.div
@@ -51,15 +55,11 @@ const Contact: React.FC = () => {
             visible: { transition: { staggerChildren: 0.1 } },
           }}
         >
-          <motion.h2
-            className="text-3xl font-bold"
-            variants={fadeIn}
-            custom={0}
-          >
+          <motion.h2 className="text-3xl font-bold" variants={fadeIn} custom={0}>
             Get in <span className="text-yellow-500">Touch</span>
           </motion.h2>
 
-          <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} action="">
+          <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
             <motion.input
               type="text"
               placeholder="Company *"
@@ -106,10 +106,6 @@ const Contact: React.FC = () => {
               Submit
             </motion.button>
           </form>
-
-          {formSubmitted && (
-            <p className="text-green-500 mt-4">Form submitted successfully!</p>
-          )}
         </motion.div>
 
         {/* Right Image Section */}
