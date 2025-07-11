@@ -173,7 +173,7 @@ const FoundersSection = () => {
     }, 
     {
       name: "Kaiful Wara",
-      title: "Banking & Finance",
+      title: "Senior Manager - Lead",
       company: "Physics Wallah",
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882061/1745844028998_f7i9ze.jpg",
       backText: "ACAMS-Certified | AML/KYC & Compliance Pro | 7+ yrs across Banking Ops, Client Reviews & Regulatory Strategy",
@@ -196,7 +196,7 @@ const FoundersSection = () => {
       title: "Coporate Outreach Associate",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQHMtWGRApg0vw/profile-displayphoto-scale_400_400/B56ZfCGxHFGoAk-/0/1751308244593?e=1757548800&v=beta&t=gglaWaLgNIibX91TixOWzirz-kGEu-1nJfP7kcIQrS4",
-      backText: "Building Myself | Corporate Partnerships and Alliances | IIT Patna | AI Generalist",
+      backText: "Coporate Outreach Associate @Physics Wallah",
       category: "poc",
       link: "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/",
       email: "saurabhprasad@pwioi.com"
@@ -206,7 +206,7 @@ const FoundersSection = () => {
       title: "Coporate Outreach Associate",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQHdGgVlFKdvZA/profile-displayphoto-shrink_400_400/B56ZdAdYjCH8Ag-/0/1749133134889?e=1757548800&v=beta&t=E5Dmgyrr1TfzFt8zVLxK-jGNxFOVssbJPLucXVtq2Gk",
-      backText: "Building Myself | Corporate Partnerships and Alliances | IIT Patna | AI Generalist",
+      backText: "Coporate Outreach Associate @Physics Wallah",
       category: "poc",
       link: "https://www.linkedin.com/in/rishabh-jain-9a62052a1/",
       email: "saurabhprasad@pwioi.com"

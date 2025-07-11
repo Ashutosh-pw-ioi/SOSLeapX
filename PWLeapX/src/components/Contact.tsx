@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import {useState } from "react";
+import type { FormEvent } from "react";
+import { toast } from "react-hot-toast";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 40 },
@@ -10,6 +13,31 @@ const fadeIn = {
 };
 
 const Contact: React.FC = () => {
+   const [formSubmitted, setFormSubmitted] = useState(false)
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const form = e.target as HTMLFormElement;
+  const url = "https://script.google.com/macros/s/AKfycbytCfFDB9NESpdDXu2olm26E8jGyuoSVdaB2-vkwgntYzsbUPYb41Z__gJvgOH69lga/exec";
+
+  const formData = new FormData(form);
+  const formBody = new URLSearchParams(formData as any).toString();
+
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: formBody
+  })
+  .then(res => res.text())
+  .then(data => {
+    toast(data);
+    setFormSubmitted(true);
+    form.reset();
+  })
+  .catch(err => console.error(err));
+};
   return (
     <div id="contact" className="w-full bg-[#fefbf5] px-4 md:px-10 py-20 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-[-50px]">
@@ -31,10 +59,11 @@ const Contact: React.FC = () => {
             Get in <span className="text-yellow-500">Touch</span>
           </motion.h2>
 
-          <form className="space-y-4">
+          <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} action="">
             <motion.input
               type="text"
               placeholder="Company *"
+              name="Company"
               className="w-full p-3 rounded-md bg-gray-50 border"
               variants={fadeIn}
               custom={1}
@@ -43,6 +72,7 @@ const Contact: React.FC = () => {
             <motion.input
               type="text"
               placeholder="Name *"
+              name="Name"
               className="w-full p-3 rounded-md bg-gray-50 border"
               variants={fadeIn}
               custom={2}
@@ -51,6 +81,7 @@ const Contact: React.FC = () => {
             <motion.input
               type="email"
               placeholder="Email *"
+              name="Email"
               className="w-full p-3 rounded-md bg-gray-50 border"
               variants={fadeIn}
               custom={3}
@@ -59,6 +90,7 @@ const Contact: React.FC = () => {
             <motion.input
               type="tel"
               placeholder="Phone Number *"
+              name="Phone"
               className="w-full p-3 rounded-md bg-gray-50 border"
               variants={fadeIn}
               custom={4}
@@ -75,37 +107,9 @@ const Contact: React.FC = () => {
             </motion.button>
           </form>
 
-          {/* Contact Info */}
-          {/* <motion.div
-            className="flex flex-col sm:flex-row sm:justify-between gap-6 pt-4 px-4"
-            variants={fadeIn}
-            custom={6}
-          >
-            <div className="flex items-start gap-3">
-              <span className="text-xl">📞</span>
-              <div>
-                <p className="text-sm font-medium text-gray-600">PHONE</p>
-                <a
-                  href="tel:+91-9481912068"
-                  className="text-yellow-500 hover:underline"
-                >
-                  +91-9481912068
-                </a>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <span className="text-xl">✉️</span>
-              <div>
-                <p className="text-sm font-medium text-gray-600">EMAIL</p>
-                <a
-                  href="mailto:contact@pwleapx.com"
-                  className="text-yellow-500 hover:underline"
-                >
-                  contact@pwleapx.com
-                </a>
-              </div>
-            </div>
-          </motion.div> */}
+          {formSubmitted && (
+            <p className="text-green-500 mt-4">Form submitted successfully!</p>
+          )}
         </motion.div>
 
         {/* Right Image Section */}
