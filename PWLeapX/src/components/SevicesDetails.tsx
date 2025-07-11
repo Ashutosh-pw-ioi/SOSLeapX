@@ -161,6 +161,9 @@ const ServicesDetails: React.FC = () => {
     setIsLoading(false);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   type ServiceType = {
   id: string;
