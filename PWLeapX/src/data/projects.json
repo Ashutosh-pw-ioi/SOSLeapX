@@ -1,18 +1,16 @@
 [
   {
     "id": 1,
-    "title": "AI-Powered Learning Platform",
-    "description": "Intelligent adaptive learning system using machine learning to personalize education experiences.",
-    "technologies": ["React", "Python", "TensorFlow", "Node.js"],
-    "liveLink": "https://ai-learning-platform-demo.vercel.app",
-    "githubLink": "https://github.com/ananya-singh/ai-learning-platform",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTswv11ALM9VzTZaGdmN9o9kHeba9aZL4o1Nw&s",
-    "teamSize": 4
+    "title": "SmartLink Hub - URL Shortener",
+    "technologies": ["React","Node.js", "Express", "MongoDB"],
+    "liveLink": "https://minli.info/",
+    "githubLink": "https://github.com/Mitesh766/Mini-URL",
+    "image": "https://www.clickslice.co.uk/wp-content/uploads/2022/07/1_Pdw7h5X6vQQNVopIzHBG6A.jpeg",
+    "teamSize": 1
   },
   {
     "id": 2,
     "title": "Blockchain Supply Chain",
-    "description": "Transparent supply chain management system built on Ethereum blockchain technology.",
     "technologies": ["Solidity", "Web3.js", "React", "Node.js"],
     "liveLink": "https://blockchain-supply-chain.netlify.app",
     "githubLink": "https://github.com/rahul-kumar/blockchain-supply-chain",
@@ -22,7 +20,6 @@
   {
     "id": 3,
     "title": "Quantum Computing Simulator",
-    "description": "Web-based quantum computing simulator for educational and research purposes.",
     "technologies": ["Python", "Qiskit", "React", "WebAssembly"],
     "liveLink": "https://quantum-simulator-web.vercel.app",
     "githubLink": "https://github.com/suresh-patel/quantum-simulator",
@@ -32,17 +29,15 @@
   {
     "id": 4,
     "title": "IoT Smart Campus",
-    "description": "Comprehensive IoT solution for smart campus management with real-time monitoring.",
     "technologies": ["Arduino", "Raspberry Pi", "React", "MongoDB"],
     "liveLink": "https://iot-smart-campus.herokuapp.com",
     "githubLink": "https://github.com/priya-sharma/iot-smart-campus",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKBnmyyY7TKfZlN5-uya1fs3uSEpeJHCPkvRpQlVeDG5LSFTmQ5EpHzj-It802CRWTK4&usqp=CAU",
-    "teamSize": 4
+    "teamSize": 2
   },
   {
     "id": 5,
     "title": "Cybersecurity Dashboard",
-    "description": "Real-time cybersecurity monitoring and threat detection system with AI analytics.",
     "technologies": ["Python", "Django", "React", "TensorFlow"],
     "liveLink": "https://cybersecurity-dashboard.netlify.app",
     "githubLink": "https://github.com/neha-gupta/cybersecurity-dashboard",
@@ -52,17 +47,15 @@
   {
     "id": 6,
     "title": "VR Education Platform",
-    "description": "Immersive virtual reality platform for interactive STEM education experiences.",
     "technologies": ["Unity", "C#", "WebXR", "Three.js"],
     "liveLink": "https://vr-education-platform.vercel.app",
     "githubLink": "https://github.com/vikash-yadav/vr-education-platform",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpsVslkPcPfYUNZUvATvMMNaT0-AzGF7V2A&s",
-    "teamSize": 4
+    "teamSize": 3
   },
   {
     "id": 7,
     "title": "Cloud-Native Microservices",
-    "description": "Scalable microservices architecture with container orchestration and monitoring.",
     "technologies": ["Docker", "Kubernetes", "Go", "React"],
     "liveLink": "https://cloud-microservices-demo.herokuapp.com",
     "githubLink": "https://github.com/arjun-mehta/cloud-microservices",
@@ -72,17 +65,15 @@
   {
     "id": 8,
     "title": "Edge AI Camera System",
-    "description": "Intelligent edge computing system for real-time video analytics and object detection.",
     "technologies": ["Python", "OpenCV", "TensorFlow Lite", "React"],
     "liveLink": "https://edge-ai-camera.netlify.app",
     "githubLink": "https://github.com/deepika-roy/edge-ai-camera",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalan-xaKXabMBtlfsojY9xa22W50MUnSaXw&s",
-    "teamSize": 4
+    "teamSize": 2
   },
   {
     "id": 9,
     "title": "5G Network Optimizer",
-    "description": "Advanced network optimization tool for 5G infrastructure performance enhancement.",
     "technologies": ["C++", "Python", "React", "Docker"],
     "liveLink": "https://5g-network-optimizer.vercel.app",
     "githubLink": "https://github.com/karthik-nair/5g-network-optimizer",
@@ -92,27 +83,24 @@
   {
     "id": 10,
     "title": "Digital Transformation Strategy",
-    "description": "Comprehensive digital transformation roadmap for traditional manufacturing companies.",
     "technologies": ["Strategic Planning", "Change Management", "Digital Analytics"],
     "liveLink": "https://digital-transformation-strategy.netlify.app",
     "githubLink": "https://github.com/aisha-khan/digital-transformation",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s",
-    "teamSize": 4
+    "teamSize": 3
   },
   {
     "id": 11,
     "title": "Agile Project Management",
-    "description": "Implementation of agile methodologies in large-scale enterprise software development.",
     "technologies": ["Scrum", "Kanban", "Project Management", "Team Leadership"],
     "liveLink": "https://agile-project-mgmt.vercel.app",
     "githubLink": "https://github.com/rohan-sharma/agile-project-management",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMn-e4BCKlMi8amO4TOXyyXbwtZZb2hTIMXw&s",
-    "teamSize": 4
+    "teamSize": 1
   },
   {
     "id": 12,
     "title": "Sustainable Business Model",
-    "description": "Development of eco-friendly business models for renewable energy startups.",
     "technologies": ["Business Strategy", "Sustainability", "Market Analysis"],
     "liveLink": "https://sustainable-business-model.herokuapp.com",
     "githubLink": "https://github.com/kavya-patel/sustainable-business-model",

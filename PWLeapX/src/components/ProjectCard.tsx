@@ -4,7 +4,6 @@ import { Github, Globe } from 'lucide-react';
 interface Project {
   id: number;
   title: string;
-  description: string;
   technologies: string[];
   githubLink: string;
   liveLink: string;
