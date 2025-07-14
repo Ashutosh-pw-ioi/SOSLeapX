@@ -281,7 +281,7 @@ type ServiceCardProps = {
     <div className="min-h-screen bg-gradient-to-br from-[#FFF5D8] to-white">
       {/* Header */}
       <div className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-6">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-5">
           <div className="flex items-center justify-between">
             <button
               onClick={() => scrollToSection('services')}

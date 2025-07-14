@@ -13,8 +13,8 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-            <div className="space-y-6">
-              <div className="flex space-x-4 text-white bg-white/10 text-500 w-fit px-4 py-2 rounded-full shadow-lg mt-[-30px]">
+            <div className="space-y-6 mt-[70px]">
+              <div className="flex space-x-4 text-white bg-white/30 text-500 w-fit px-4 py-2 rounded-full shadow-lg mt-[-30px]">
                 Powered by PW SOS
               </div>
               <div className="space-y-6">
@@ -23,7 +23,7 @@ const Hero = () => {
                   <span className=" text-black"> Execution, Not Just GYAN</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed">
-                  ❝LeapX is built on a simple belief, startups need real-time problem solving partners rather than just advisors. That's the gap we are aspiring to fill❞
+                  ❝LeapX is built on a simple belief, startups need real-time problem solving partners rather than just advisors. That's the gap we are aspiring to fill❞
                 </p>
               </div>
 
