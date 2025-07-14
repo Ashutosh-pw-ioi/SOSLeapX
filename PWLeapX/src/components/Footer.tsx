@@ -48,10 +48,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex space-x-4 mt-2">
-            <a href="#" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition">
+            <a href="https://www.instagram.com/pwschoolofstartups/?hl=en" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition" target='_blank'>
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition">
+            <a href="https://www.linkedin.com/company/pw-school-of-startups/?originalSubdomain=in" className="bg-gray-200 text-black p-2 rounded-full hover:bg-[#E68C32] transition" target='_blank'>
               <Linkedin className="h-5 w-5" />
             </a>
           </div>
