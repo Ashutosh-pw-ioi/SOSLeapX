@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import {Menu, X} from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,20 +22,24 @@ const Header = () => {
         }
       }, 100);
     }
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); 
   };
 
   return (
-    <header className="relative z-50 bg-white/70 backdrop-blur  border-b border-[#F4A460] sticky top-0 rounded-lg shadow-md ">
+    <header className="relative z-50 bg-white/70 backdrop-blur border-b border-[#F4A460] sticky top-0 rounded-lg shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-0">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Link to="/" className="flex items-center space-x-2">
-            <div className="w-40 h-16 mb-4 mt-[-5px]">
-              <img src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1751659251/PW_Leap_X_fxqdkj.svg" alt="Name" className="mt-0" />
-            </div>
-          </Link>
+              <div className="w-40 h-16 mb-4 mt-[-5px]">
+                <img
+                  src="https://res.cloudinary.com/dsdcta1sr/image/upload/v1751659251/PW_Leap_X_fxqdkj.svg"
+                  alt="Name"
+                  className="mt-0"
+                />
+              </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -53,14 +56,12 @@ const Header = () => {
             >
               Our Services
             </button>
-
             <button
               onClick={() => navigate('/projects')}
               className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Projects
             </button>
-
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -93,19 +94,23 @@ const Header = () => {
                 About Us
               </button>
               <button
-                onClick={() => navigate('/services-details')}
+                onClick={() => {
+                  navigate('/services-details');
+                  setIsMenuOpen(false); 
+                }}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
               >
                 Our Services
               </button>
-
               <button
-                onClick={() => navigate('/projects')}
+                onClick={() => {
+                  navigate('/projects');
+                  setIsMenuOpen(false); 
+                }}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
               >
                 Projects
               </button>
-
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
