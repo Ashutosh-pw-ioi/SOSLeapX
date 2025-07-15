@@ -1,24 +1,40 @@
-# PW LEAPX 🚀
+# 🚀 PWLeapX
 
-**Live Site**: [https://pw-leap-x.vercel.app](https://pw-leap-x.vercel.app)
+**Live Demo:** [https://pw-leap-x.vercel.app](https://pw-leap-x.vercel.app)
 
-PW Leap X is a responsive, modern, and interactive React + TypeScript web application built to showcase the PW Leap X initiative. The site highlights key information like program benefits, experts, services, and project showcases in a sleek single-page experience.
-
----
-
-## 🧠 Overview
-
-This is a multi-section frontend project with dynamic rendering using React components and local JSON data. It is styled using **Tailwind CSS** and deployed on **Vercel**.
+PWLeapX is a modern, fully responsive, and interactive web application built using **React**, **TypeScript**, and **Tailwind CSS**. It showcases the PW Leap X initiative with sections like About, Experts, Projects, Services, and more. The project is deployed via **Vercel** for seamless accessibility.
 
 ---
 
-## 🗂️ Project Structure
+## 📌 Features
+
+- ⚡ Lightning-fast performance with Vite
+- 🧩 Modular component-based architecture
+- 🌐 Fully responsive and mobile-first design
+- 🎯 Interactive UI with smooth animations
+- 📁 Clean file structure for easy scalability
+- 💡 Dynamic rendering of project data using JSON
+- ☁️ Live deployment using Vercel
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Deployment:** Vercel
+
+---
+
+## 📁 Folder Structure
 
 ```plaintext
 PWLeapX/
-├── public/                     # Static files like images, favicons
+├── public/                    # Static assets (images, icons, etc.)
 ├── src/
-│   ├── components/             # Reusable UI components
+│   ├── components/            # Reusable UI components
 │   │   ├── AboutUs.tsx
 │   │   ├── Achievement.tsx
 │   │   ├── Clients.tsx
@@ -32,22 +48,22 @@ PWLeapX/
 │   │   ├── Services.tsx
 │   │   └── ServicesDetail.tsx
 │   ├── data/
-│   │   └── projects.json       # Project data loaded into the Projects section
-│   ├── pages/                  # Main pages of the site
+│   │   └── projects.json      # JSON file containing project details
+│   ├── pages/                 # Main pages of the application
 │   │   ├── HomePage.tsx
 │   │   └── Projects.tsx
-│   ├── App.tsx                 # Entry point for routing/layout
-│   ├── App.css                 # Global styles
-│   ├── index.css               # Tailwind base styles
-│   ├── main.tsx                # Root React render call
+│   ├── App.tsx                # Root component
+│   ├── App.css                # Global app-level styles
+│   ├── index.css              # Tailwind CSS base styles
+│   ├── main.tsx               # Entry point for rendering React
 │   └── vite-env.d.ts
-├── index.html                  # Main HTML template
-├── tailwind.config.js          # Tailwind configuration
-├── tsconfig*.json              # TypeScript configs
+├── index.html                 # HTML template
+├── tailwind.config.js         # Tailwind CSS configuration
+├── tsconfig*.json             # TypeScript configurations
 ├── postcss.config.js
-├── vite.config.ts              # Vite config
-├── vercel.json                 # Vercel deployment config
-├── .eslintrc.js                # Linting rules
+├── vite.config.ts             # Vite configuration
+├── vercel.json                # Vercel deployment settings
+├── .eslintrc.js               # Linting rules
 ├── .gitignore
 ├── package.json
-└── README.md                   # Project documentation
+└── README.md                  # Project documentation
