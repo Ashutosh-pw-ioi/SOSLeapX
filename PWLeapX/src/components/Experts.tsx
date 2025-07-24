@@ -166,7 +166,7 @@ const FoundersSection = () => {
       title: "Head- Corporate Partnership & Career Excellence",
       company: "Physics Wallah",
       image: "https://media.licdn.com/dms/image/v2/D5603AQFEVXRFd7Q1Xg/profile-displayphoto-shrink_400_400/B56ZbS2fJ.GoAo-/0/1747294222002?e=1757548800&v=beta&t=PZzOJdZ1_3HSqvW8jMSsWFTYGBk5PMsL8YCKtY5n6ss",
-      backText: "Ex- Great Learning and TalentSprint | Strategic Partnerships | Digital Transformation",
+      backText: "Head- Corporate Partnership & Career Excellence @Physics Wallah",
       category: "poc",
       link: "https://www.linkedin.com/in/vikasbhansali/",
       email: "vikash@pwioi.com"
@@ -176,7 +176,7 @@ const FoundersSection = () => {
       title: "Senior Manager - Lead",
       company: "Physics Wallah",
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752517778/Kaiful_Wara_ti6bt5.svg",
-      backText: "ACAMS-Certified | AML/KYC & Compliance Pro | 7+ yrs across Banking Ops, Client Reviews & Regulatory Strategy",
+      backText: "Senior Manager - Lead @Physics Wallah",
       category: "poc",
       link: "https://www.linkedin.com/in/kaifulwara/",
       email: "kaifulwara@pwioi.com"
@@ -186,7 +186,7 @@ const FoundersSection = () => {
       title: "Functional Lead - Career Services",
       company: "Physics Wallah",
       image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414087/Saurabh_Prasad_mavqbb.svg",
-      backText: "Career Strategist | Building Industry-Academia Partnerships for Future-Ready Workforce",
+      backText: "Functional Lead - Career Services @Physics Wallah",
       category: "poc",
       link: "https://www.linkedin.com/in/saurabh-prasad/",
       email: "saurabhprasad@pwioi.com"

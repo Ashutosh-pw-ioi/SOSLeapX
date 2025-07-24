@@ -56,12 +56,12 @@ const Header = () => {
             >
               Our Services
             </button>
-            <button
+            {/* <button
               onClick={() => navigate('/projects')}
               className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Our LeapX
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-white text-[#E68C32] px-6 py-2 rounded-full font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -102,7 +102,7 @@ const Header = () => {
               >
                 Our Services
               </button>
-              <button
+              {/* <button
                 onClick={() => {
                   navigate('/projects');
                   setIsMenuOpen(false); 
@@ -110,7 +110,7 @@ const Header = () => {
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
               >
                 Our LeapX
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-[#E68C32] px-4 py-2 rounded-lg font-semibold hover:bg-[#F4A460] hover:text-white transition-all duration-300 text-left"
