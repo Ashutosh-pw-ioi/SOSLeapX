@@ -126,7 +126,7 @@ const FoundersSection = () => {
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751916662/Dr._Sapna_Nibsaiya_yv7fpt.jpg",
       backText: "Program Leader | National Head | CA Trainer | Strategy & Economics Specialist | Consultant & SME Expert",
       category: "management",
-    },
+    },    
     {
       name: "Pankaj Kumar Jha",
       title: "Director - Ops",
@@ -153,7 +153,7 @@ const FoundersSection = () => {
     },  
     {
       name: "Vishal Hampiholi",
-      title: "Q & A manager",
+      title: "Sales Strategist",
       company: "Physics Wallah",
       image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1752140613/Vishal_sir_image_ydqyoc.svg",
       backText: "Quality & Training Manager @ PW | LSSGB Certified | Ex-Great Learning, UNext, Unacademy & HDB Financial",
