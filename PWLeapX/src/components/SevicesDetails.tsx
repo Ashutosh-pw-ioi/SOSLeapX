@@ -281,20 +281,29 @@ type ServiceCardProps = {
     <div className="min-h-screen bg-gradient-to-br from-[#FFF5D8] to-white">
       {/* Header */}
       <div className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-5">
-          <div className="flex items-center justify-between">
-            <button
-              onClick={() => scrollToSection('services')}
-              className="flex items-center gap-2 text-[#E68C32] hover:text-[#f68a6b] font-semibold transition-colors hover:scale-105 text-sm md:text-base"
-            >
-              <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
-              Back to Home
-            </button>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800">Where we can support you</h1>
-            <div className="w-20 md:w-32"></div>
-          </div>
-        </div>
-      </div>
+  <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 py-2 sm:py-3 md:py-5">
+    <div className="flex items-center justify-between flex-wrap gap-2">
+      
+      {/* Back Button */}
+      <button
+        onClick={() => scrollToSection('services')}
+        className="flex items-center gap-1 sm:gap-2 text-[#E68C32] hover:text-[#f68a6b] font-semibold transition-transform duration-300 hover:scale-105 text-xs sm:text-sm md:text-base"
+      >
+        <ChevronLeft className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+        Back
+      </button>
+
+      {/* Title */}
+      <h1 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold text-gray-800 text-center w-full sm:w-auto">
+        Where we can support you
+      </h1>
+
+      {/* Spacer for alignment */}
+      <div className="w-10 sm:w-20 md:w-32"></div>
+    </div>
+  </div>
+</div>
+
 
       {/* Filter Buttons */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
