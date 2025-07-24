@@ -1,6 +1,6 @@
 # 🚀 PWLeapX
 
-**Live Demo:** [https://pw-leap-x.vercel.app](https://pw-leap-x.vercel.app)
+**Live Demo:** [https://www.pwleapx.com/](https://www.pwleapx.com/)
 
 PWLeapX is a modern, fully responsive, and interactive web application built using **React**, **TypeScript**, and **Tailwind CSS**. It showcases the PW Leap X initiative with sections like About, Experts, Projects, Services, and more. The project is deployed via **Vercel** for seamless accessibility.
 
