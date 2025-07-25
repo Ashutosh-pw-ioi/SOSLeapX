@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import Projects from './pages/Projects';
+// import Projects from './pages/Projects';
 import ServicesDetails from './components/SevicesDetails'
 import { Toaster } from 'react-hot-toast';
 
@@ -29,7 +29,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<Projects />} />
+        {/* <Route path="/projects" element={<Projects />} /> */}
         <Route path="/services-details" element={<ServicesDetails />} />
       </Routes>
       <Footer />
