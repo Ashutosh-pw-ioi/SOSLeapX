@@ -14,16 +14,13 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
             <div className="space-y-6">
-              <div className="flex space-x-4 text-white bg-white/30 text-500 w-fit px-4 py-2 rounded-full shadow-lg mt-[-30px]">
-                Powered by PW SOS
-              </div>
               <div className="space-y-6">
                 <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
                   Fueling Bharat's Entrepreneurs with 
-                  <span className=" text-black"> Execution, Not Just GYAN</span>
+                  <span className=" text-black"> Execution Support</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed">
-                  ❝LeapX is built on a simple belief, startups need real-time problem solving partners rather than just advisors. That's the gap we are aspiring to fill❞
+                  ❝PW LeapX is India's most reliable execution partner, empowering startups with tech and strategic solutions, acting as their extended arm for growth.❞
                 </p>
               </div>
 
@@ -40,6 +37,17 @@ const Hero = () => {
 
             
             <div className="relative">
+              {/* Top-right smaller image */}
+              <div className="absolute top-[-50px] right-20 font-bold text-white">
+                Powered by
+              </div>
+
+              <img
+                src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/10527432-cd54-4d47-b4e7-169e5f252fab.svg"
+                alt="PW SOS"
+                className="absolute top-[-40px] right-16 h-24"
+              />
+
               <div className="mb-[-80px] w-full h-full">
                   <img
                       src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/73eb7125-6504-4fdf-90ef-4601bf39b10e.png"

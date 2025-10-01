@@ -7,23 +7,6 @@ const FoundersSection = () => {
 
   const founders = [
     {
-      name: "Devesh Mishra",
-      title: "CTO PW",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751883327/1694026131307_tu3cnu.jpg",
-      backText: "Tech leader with 8+ yrs experience | Now CTO @ Physics Wallah | Scaled 2+ startups",
-      category: "tech",
-     
-    },
-    {
-      name: "Vineet Govil",
-      title: "CTPO PW",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752517777/vineet_wlvpey.svg",
-      backText: "CTPO, Physics Wallah | Ex-Viacom18 CTO | Ex-Dish Network India Head | Nasscom Mentor | Advisor to Startups",
-      category: "tech",
-    },
-    {
       name: "Janishar Ali",
       title: "VP,Ex- founder Curious jr",
       company: "Physics Wallah",
@@ -96,11 +79,11 @@ const FoundersSection = () => {
       category: "management",
     },
     {
-      name: "Imran Rashid",
-      title: "Chief Business Officer @ PW",
+      name: "Raunaq Mustafa",
+      title: "GM, Program Head",
       company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dlnyzjn5e/image/upload/v1751882059/1689530192943_ztw247.jpg",
-      backText: "Chief Business Officer @ PW | EdTech Growth Strategist | Founder @ Aptence | Product Leader with a decade of building impact-driven, data-backed solutions",
+      image: "https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/d73443e5-a742-4290-b60c-d469ccc35ae2.png",
+      backText: "GM, Program Head @ PW SOS",
       category: "management",
     },
     {
@@ -162,6 +145,26 @@ const FoundersSection = () => {
     
 
     {
+      name: "Ashutosh Tiwari",
+      title: "Founding Team",
+      company: "PW LeapX",
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414082/Ashutosh_Tiwari_uuyqqj.svg",
+      backText: "Founding Team Member @ PW LeapX",
+      category: "poc",
+      link: "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/",
+      email: "saurabhprasad@pwioi.com"
+    },
+    {
+      name: "Rishabh Jain",
+      title: "Founding Team",
+      company: "PW LeapX",
+      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg",
+      backText: "Founding Team Member @ PW LeapX",
+      category: "poc",
+      link: "https://www.linkedin.com/in/rishabh-jain-9a62052a1/",
+      email: "saurabhprasad@pwioi.com"
+    },
+    {
       name: "Vikas Bhansali",
       title: "Head- Corporate Partnership & Career Excellence",
       company: "Physics Wallah",
@@ -191,26 +194,6 @@ const FoundersSection = () => {
       link: "https://www.linkedin.com/in/saurabh-prasad/",
       email: "saurabhprasad@pwioi.com"
     },  
-    {
-      name: "Ashutosh Tiwari",
-      title: "Coporate Outreach Associate",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414082/Ashutosh_Tiwari_uuyqqj.svg",
-      backText: "Coporate Outreach Associate @Physics Wallah",
-      category: "poc",
-      link: "https://www.linkedin.com/in/ashutosh-tiwari-97024a2a1/",
-      email: "saurabhprasad@pwioi.com"
-    },
-    {
-      name: "Rishabh Jain",
-      title: "Coporate Outreach Associate",
-      company: "Physics Wallah",
-      image: "https://res.cloudinary.com/dsdcta1sr/image/upload/v1752414083/Rishabh_Jain_uk6ajq.svg",
-      backText: "Coporate Outreach Associate @Physics Wallah",
-      category: "poc",
-      link: "https://www.linkedin.com/in/rishabh-jain-9a62052a1/",
-      email: "saurabhprasad@pwioi.com"
-    },
     
   ];
 
