@@ -9,15 +9,26 @@ const Hero = () => {
     <>
       <section className="relative bg-[#E68C32] py-16 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#F4A460] rounded-l-full opacity-30"></div>
-        
+
+        {/* Mobile: move PW SOS logo to top-right */}
+        <div className="absolute top-2 right-4 flex flex-col items-end lg:hidden z-20">
+          <span className="text-xs font-semibold text-white">Powered by</span>
+          <img
+            src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/10527432-cd54-4d47-b4e7-169e5f252fab.svg"
+            alt="PW SOS"
+            className="h-14"
+          />
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
+            {/* Left Content */}
             <div className="space-y-6">
               <div className="space-y-6">
                 <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
                   Fueling Bharat's Entrepreneurs with 
-                  <span className=" text-black"> Execution Support</span>
+                  <span className="text-black"> Execution Support</span>
                 </h1>
                 <p className="text-xl text-white/90 leading-relaxed">
                   ❝PW LeapX is India's most reliable execution partner, empowering startups with tech and strategic solutions, acting as their extended arm for growth.❞
@@ -35,31 +46,31 @@ const Hero = () => {
               </div>
             </div>
 
-            
+            {/* Right Image Section */}
             <div className="relative">
-              {/* Top-right smaller image */}
-              <div className="absolute top-[-50px] right-20 font-bold text-white">
+              {/* Desktop only PW SOS logo */}
+              <div className="absolute top-[-50px] right-20 font-bold text-white hidden lg:block">
                 Powered by
               </div>
 
               <img
                 src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/10527432-cd54-4d47-b4e7-169e5f252fab.svg"
                 alt="PW SOS"
-                className="absolute top-[-40px] right-16 h-24"
+                className="absolute top-[-40px] right-16 h-24 hidden lg:block"
               />
 
+              {/* Founders image — stays same everywhere */}
               <div className="mb-[-80px] w-full h-full">
-                  <img
-                      src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/73eb7125-6504-4fdf-90ef-4601bf39b10e.png"
-                      alt='Founders of Physics Wallah'
-                  />  
+                <img
+                  src="https://static.pw.live/5eb393ee95fab7468a79d189/ADMIN/73eb7125-6504-4fdf-90ef-4601bf39b10e.png"
+                  alt="Founders of Physics Wallah"
+                />  
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Demo Modal */}
       <DemoModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
